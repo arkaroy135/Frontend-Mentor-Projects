@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+//### Primary
+
+$Pale-blue: hsl(225, 100%, 94%);
+$Bright-blue: hsl(245, 75%, 52%);
+
+//### Neutral
+
+$Very-pale-blue: hsl(225, 100%, 98%);
+$Desaturated-blue: hsl(224, 23%, 55%);
+$Dark-blue: hsl(223, 47%, 23%);
+
+$mobile: 375px;
+$laptop: 1280px;
+$paragraph-font: 16px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 1.5rem;
+    background: $Pale-blue;
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 25rem;
+      border-radius: 1rem;
+      background: white;
+      box-shadow: 0 0.5rem 4rem $Desaturated-blue;
+
+      img {
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+      }
+
+      section {
+        padding: 0 1.2rem;
+        font-weight: 500;
+      }
+
+      .description {
+        text-align: center;
+        padding: 1rem 1.2rem;
+        h1 {
+          font-weight: 900;
+        }
+        p {
+          padding: 1rem 0.8rem;
+          color: $Desaturated-blue;
+          font-size: $paragraph-font;
+        }
+      }
+
+      .price {
+        display: flex;
+        padding: 1.2rem;
+        width: 88%;
+        border-radius: 1rem;
+        justify-content: space-between;
+        background: $Very-pale-blue;
+        img {
+          width: 4rem;
+          margin-left: -0.5rem;
+          padding-right: 1rem;
+        }
+        div {
+          display: flex;
+          flex: 1;
+          justify-content: space-between;
+          p {
+            padding: 0 2rem 0 0.7rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: $Desaturated-blue;
+            font-size: $paragraph-font;
+            font-weight: 500;
+            span {
+              text-align: center;
+              color: $Dark-blue;
+              font-weight: 700;
+            }
+          }
+          a {
+            font-size: 0.9rem;
+            font-weight: 700;
+            align-self: center;
+          }
+        }
+      }
+      .proceed {
+        font-size: 0.95rem;
+        font-weight: 700;
+        letter-spacing: 0.02rem;
+        width: 88%;
+        border: 0;
+        outline: 0;
+        border-radius: 0.5rem;
+        padding: 0.9rem 2rem;
+        margin: 1.5rem 0 1.3rem 0;
+        color: $Very-pale-blue;
+        background: $Bright-blue;
+        box-shadow: 0 0.5rem 1rem $Desaturated-blue;
+      }
+      .cancel {
+        background: none;
+        border: 0;
+        outline: 0;
+        color: $Desaturated-blue;
+        font-size: 0.95rem;
+        font-weight: 700;
+        letter-spacing: 0.01rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  body {
+    .container {
+      background-image: url(./images/pattern-background-desktop.svg);
+      background-repeat: no-repeat;
+      .card {
+        .price {
+          width: 85%;
+          padding: 1.5rem;
+          img {
+            margin-left: -0.7rem;
+          }
+          div {
+            p {
+              padding: 0 0.4rem;
+            }
+            a {
+              margin-right: -0.5rem;
+            }
+          }
+        }
+        .proceed {
+          width: 85%;
+        }
+      }
+    }
+  }
+}

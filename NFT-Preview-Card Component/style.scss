@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+$soft-blue-text: hsl(215, 51%, 70%);
+$cyan-text: hsl(178, 100%, 50%);
+$main-background: hsl(217, 54%, 11%);
+$card-background: hsl(216, 50%, 16%);
+$line: hsl(215, 32%, 27%);
+$white-text: hsl(0, 0%, 100%);
+$footer-link-text: hsl(228, 45%, 44%);
+
+$mobile: 375px;
+$desktop: 1440px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit";
+  background: $main-background;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    height: calc(100vh - (1rem));
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      width: 21rem;
+      background: $card-background;
+      padding: 1.3rem;
+      border-radius: 1rem;
+
+      .image-wrapper {
+        position: relative;
+        cursor: pointer;
+
+        .item {
+          width: 100%;
+          height: 100%;
+          border-radius: 0.5rem;
+        }
+        .overlay {
+          position: absolute;
+          background: $cyan-text;
+          opacity: 0.5;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border-radius: 0.5rem;
+          display: none;
+        }
+        .item-open {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: none;
+        }
+        &:hover {
+          .overlay {
+            display: block;
+          }
+          .item-open {
+            display: block;
+          }
+        }
+      }
+
+      .description {
+        padding: 0.5rem 0;
+        h1 {
+          color: $white-text;
+          font-size: 1.38rem;
+          font-weight: 600;
+          padding: 1rem 0;
+          cursor: pointer;
+          transition: all ease-in-out 0.3s;
+        }
+        h1:hover {
+          color: $cyan-text;
+        }
+
+        p {
+          font-size: 1.125rem;
+          font-weight: 300;
+          color: $soft-blue-text;
+          padding: 0.2rem 0;
+          line-height: 1.6rem;
+        }
+      }
+
+      .status {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+        font-size: 1rem;
+
+        .price {
+          display: inline-flex;
+          align-items: center;
+          p {
+            font-weight: 600;
+            color: $cyan-text;
+            padding-left: 0.5rem;
+          }
+        }
+
+        .timer {
+          display: inline-flex;
+          align-items: center;
+          p {
+            font-weight: 300;
+            color: $soft-blue-text;
+            padding-left: 0.5rem;
+          }
+        }
+      }
+
+      hr {
+        color: $line;
+      }
+      .profile {
+        display: flex;
+        align-items: center;
+        padding-top: 1rem;
+        .avatar {
+          width: 2rem;
+          height: 2rem;
+          border: 1px solid $white-text;
+          border-radius: 100%;
+        }
+        p {
+          font-size: 1rem;
+          padding: 0 1.2rem;
+          color: $soft-blue-text;
+        }
+        .creator {
+          color: $white-text;
+          cursor: pointer;
+          transition: all ease-in-out 0.3s;
+        }
+        .creator:hover {
+          color: $cyan-text;
+        }
+      }
+    }
+  }
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    height: 1rem;
+    color: $white-text;
+    a {
+      color: $white-text;
+      font-weight: 600;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  body {
+    .container {
+      .card {
+        width: 23rem;
+        padding: 1.45rem;
+        .description {
+          h1 {
+            font-size: 1.48rem;
+          }
+          p {
+            font-size: 1.125rem;
+          }
+        }
+        .profile {
+          p {
+            font-size: 1.125rem;
+          }
+        }
+      }
+    }
+  }
+}

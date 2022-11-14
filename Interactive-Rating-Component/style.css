@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  background: var(--very-dark-blue);
+}
+
+.container {
+  display: flex;
+  height: calc(100vh - (1rem));
+  max-width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: block;
+  width: 400px;
+  background: linear-gradient(var(--dark-blue), hsl(216, 8%, 13%));
+  padding: 2rem;
+  border-radius: 20px;
+  word-spacing: normal;
+}
+
+.card h1 {
+  color: white;
+  padding: 1.2rem 0 0 0;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: var(--medium-grey);
+  padding: 0.8rem 0;
+}
+
+.btn-sub {
+  display: block;
+  margin: 0.8rem auto;
+  padding: 0.7rem 0 0.6rem 0;
+  width: 100%;
+  background-color: var(--orange);
+  border: 0;
+  outline: none;
+  border-radius: 20px;
+  font-size: medium;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.btn-sub:hover {
+  color: var(--orange);
+  background: white;
+}
+
+#rating-card .star-image {
+  background: hsl(240, 2%, 22%);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+#rating-card .rates {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0;
+}
+
+#rating-card .rates .btn {
+  padding: 1rem 1.2rem 0.9rem 1.2rem;
+  border-radius: 100%;
+  cursor: pointer;
+  font-weight: 700;
+  border: 0;
+  outline: none;
+  background: hsl(240, 2%, 22%);
+  color: white;
+  transition: all ease 0.3s;
+}
+
+#rating-card .rates .btn:hover {
+  background: var(--orange);
+}
+
+#rating-card .rates .btn:focus {
+  background: var(--light-grey);
+}
+
+.hidden {
+  display: none;
+}
+
+#thank-you-card {
+  text-align: center;
+}
+
+#thank-you-card .ack {
+  display: inline-block;
+  padding: 0.5rem 0.8rem 0.3rem 0.8rem;
+  border: 0;
+  outline: none;
+  border-radius: 20px;
+  color: var(--orange);
+  background: hsl(240, 2%, 22%);
+  margin-top: 0.7rem;
+}
+
+#thank-you-card p {
+  margin: -0.8rem auto;
+}
+
+.footer {
+  font-size: 11px;
+  text-align: center;
+  height: 1rem;
+  color: white;
+}
+
+.footer a {
+  color: white;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    max-width: 343px;
+    padding: 1.4rem;
+  }
+
+  .card p {
+    line-height: 1.3rem;
+  }
+}

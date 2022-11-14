@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+body .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 1.5rem;
+  background: hsl(225deg, 100%, 94%);
+  background-image: url(./images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+}
+body .container .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 25rem;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 0.5rem 4rem hsl(224deg, 23%, 55%);
+}
+body .container .card img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+body .container .card section {
+  padding: 0 1.2rem;
+  font-weight: 500;
+}
+body .container .card .description {
+  text-align: center;
+  padding: 1rem 1.2rem;
+}
+body .container .card .description h1 {
+  font-weight: 900;
+}
+body .container .card .description p {
+  padding: 1rem 0.8rem;
+  color: hsl(224deg, 23%, 55%);
+  font-size: 16px;
+}
+body .container .card .price {
+  display: flex;
+  padding: 1.2rem;
+  width: 88%;
+  border-radius: 1rem;
+  justify-content: space-between;
+  background: hsl(225deg, 100%, 98%);
+}
+body .container .card .price img {
+  width: 4rem;
+  margin-left: -0.5rem;
+  padding-right: 1rem;
+}
+body .container .card .price div {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+body .container .card .price div p {
+  padding: 0 2rem 0 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: hsl(224deg, 23%, 55%);
+  font-size: 16px;
+  font-weight: 500;
+}
+body .container .card .price div p span {
+  text-align: center;
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 700;
+}
+body .container .card .price div a {
+  font-size: 0.9rem;
+  font-weight: 700;
+  align-self: center;
+}
+body .container .card .proceed {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02rem;
+  width: 88%;
+  border: 0;
+  outline: 0;
+  border-radius: 0.5rem;
+  padding: 0.9rem 2rem;
+  margin: 1.5rem 0 1.3rem 0;
+  color: hsl(225deg, 100%, 98%);
+  background: hsl(245deg, 75%, 52%);
+  box-shadow: 0 0.5rem 1rem hsl(224deg, 23%, 55%);
+}
+body .container .card .cancel {
+  background: none;
+  border: 0;
+  outline: 0;
+  color: hsl(224deg, 23%, 55%);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.01rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1280px) {
+  body .container {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+  }
+  body .container .card .price {
+    width: 85%;
+    padding: 1.5rem;
+  }
+  body .container .card .price img {
+    margin-left: -0.7rem;
+  }
+  body .container .card .price div p {
+    padding: 0 0.4rem;
+  }
+  body .container .card .price div a {
+    margin-right: -0.5rem;
+  }
+  body .container .card .proceed {
+    width: 85%;
+  }
+}/*# sourceMappingURL=style.css.map */

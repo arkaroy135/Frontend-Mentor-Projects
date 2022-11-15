@@ -42,7 +42,7 @@ $font-lexend-deca: "Lexend Deca", sans-serif;
   padding: 1.5rem;
   .card {
     background: $Dark-desaturated-blue;
-    width: 23rem;
+    width: 25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,51 +78,99 @@ $font-lexend-deca: "Lexend Deca", sans-serif;
         border-radius: 0.5rem 0.5rem 0 0;
       }
     }
-    .description {
-      padding: 0.5rem;
-      margin-top: -1rem;
-      h1 {
-        padding: 2rem;
-        text-align: center;
-        font-size: 1.6rem;
-        font-family: $font-inter;
-        font-weight: 700;
-        color: $White;
-        mark {
-          color: $Soft-violet;
-          background: none;
-        }
-      }
-      p {
-        color: $slightly-transparent-white;
-        font-size: $text-size;
-        padding: 0.3rem 1.3rem;
-        line-height: 1.4rem;
-        font-family: $font-inter;
-        font-weight: 400;
-        text-align: center;
-      }
-    }
-    .stats {
-      display: flex;
-      flex-direction: column;
-      padding-bottom: 1.5rem;
-      text-align: center;
-      p {
-        display: flex;
-        flex-direction: column;
+    div {
+      .description {
         padding: 0.5rem;
-        font-size: 0.8rem;
-        font-weight: 400;
-        color: $Slightly-transparent-white;
-        font-family: $font-lexend-deca;
-        text-transform: uppercase;
-        span {
+        margin-top: -1rem;
+        h1 {
+          padding: 2rem;
+          text-align: center;
+          font-size: 1.6rem;
           font-family: $font-inter;
-          font-size: 1.3rem;
           font-weight: 700;
           color: $White;
-          padding: 0.3rem 0;
+          mark {
+            color: $Soft-violet;
+            background: none;
+          }
+        }
+        p {
+          color: $slightly-transparent-white;
+          font-size: $text-size;
+          padding: 0.3rem 1.3rem;
+          line-height: 1.4rem;
+          font-family: $font-inter;
+          font-weight: 400;
+          text-align: center;
+        }
+      }
+      .stats {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2rem;
+        text-align: center;
+        p {
+          display: flex;
+          flex-direction: column;
+          padding: 0.5rem;
+          font-size: 0.8rem;
+          font-weight: 400;
+          color: $Slightly-transparent-white;
+          font-family: $font-lexend-deca;
+          text-transform: uppercase;
+          span {
+            font-family: $font-inter;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: $White;
+            padding: 0.3rem 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  .container {
+    .card {
+      width: 80%;
+      flex-direction: row-reverse;
+      .hero {
+        width: 100%;
+        img {
+          border-radius: 0 0.5rem 0.5rem 0;
+        }
+        .overlay {
+          border-radius: 0 0.5rem 0.5rem 0;
+        }
+        .overlay2 {
+          border-radius: 0 0.5rem 0.5rem 0;
+        }
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        padding: 0 5rem 0 1rem;
+        .description {
+          h1 {
+            font-size: 2.1rem;
+            text-align: left;
+          }
+          p {
+            width: 95%;
+            text-align: left;
+            font-size: 0.9rem;
+            padding: 0rem 2rem;
+            line-height: 1.5rem;
+          }
+        }
+        .stats {
+          width: 95%;
+          flex-direction: row;
+          text-align: left;
+          justify-content: space-around;
+          padding: 1.5rem 0.5rem 0 0.5rem;
         }
       }
     }

@@ -16,7 +16,7 @@
 }
 .container .card {
   background: hsl(244deg, 38%, 16%);
-  width: 23rem;
+  width: 25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,11 +53,11 @@
   opacity: 29%;
   border-radius: 0.5rem 0.5rem 0 0;
 }
-.container .card .description {
+.container .card div .description {
   padding: 0.5rem;
   margin-top: -1rem;
 }
-.container .card .description h1 {
+.container .card div .description h1 {
   padding: 2rem;
   text-align: center;
   font-size: 1.6rem;
@@ -65,11 +65,11 @@
   font-weight: 700;
   color: hsl(0deg, 0%, 100%);
 }
-.container .card .description h1 mark {
+.container .card div .description h1 mark {
   color: hsl(277deg, 64%, 61%);
   background: none;
 }
-.container .card .description p {
+.container .card div .description p {
   color: hsla(0deg, 0%, 100%, 0.75);
   font-size: 15px;
   padding: 0.3rem 1.3rem;
@@ -78,13 +78,13 @@
   font-weight: 400;
   text-align: center;
 }
-.container .card .stats {
+.container .card div .stats {
   display: flex;
   flex-direction: column;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
   text-align: center;
 }
-.container .card .stats p {
+.container .card div .stats p {
   display: flex;
   flex-direction: column;
   padding: 0.5rem;
@@ -94,10 +94,52 @@
   font-family: "Lexend Deca", sans-serif;
   text-transform: uppercase;
 }
-.container .card .stats p span {
+.container .card div .stats p span {
   font-family: "Inter", sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
   color: hsl(0deg, 0%, 100%);
   padding: 0.3rem 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .container .card {
+    width: 80%;
+    flex-direction: row-reverse;
+  }
+  .container .card .hero {
+    width: 100%;
+  }
+  .container .card .hero img {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+  .container .card .hero .overlay {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+  .container .card .hero .overlay2 {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+  .container .card div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem 0 1rem;
+  }
+  .container .card div .description h1 {
+    font-size: 2.1rem;
+    text-align: left;
+  }
+  .container .card div .description p {
+    width: 95%;
+    text-align: left;
+    font-size: 0.9rem;
+    padding: 0rem 2rem;
+    line-height: 1.5rem;
+  }
+  .container .card div .stats {
+    width: 95%;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-around;
+    padding: 1.5rem 0.5rem 0 0.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */

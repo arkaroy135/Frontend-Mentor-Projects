@@ -24,7 +24,6 @@
   border-radius: 0.5rem;
 }
 .container .card .hero {
-  display: flex;
   position: relative;
 }
 .container .card .hero img {
@@ -111,6 +110,7 @@
     width: 100%;
   }
   .container .card .hero img {
+    margin-bottom: -0.2rem;
     border-radius: 0 0.5rem 0.5rem 0;
   }
   .container .card .hero .overlay {

@@ -26,7 +26,9 @@ $text-size: 15px;
 $font-inter: "Inter", sans-serif;
 $font-lexend-deca: "Lexend Deca", sans-serif;
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;

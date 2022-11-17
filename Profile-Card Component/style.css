@@ -1,13 +1,116 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
-.attribution {
-  font-size: 11px;
-  font-family: "Kumbh Sans", sans-serif;
-  font-weight: 400;
-  text-align: center;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.attribution a {
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: hsl(185deg, 75%, 39%);
+  overflow: hidden;
+  position: relative;
+}
+.container .bg-top {
+  mix-blend-mode: soft-light;
+  width: 180%;
+  position: absolute;
+  top: -19rem;
+  left: -29rem;
+}
+.container .bg-bottom {
+  width: 180%;
+  position: absolute;
+  bottom: -17rem;
+  right: -29rem;
+}
+.container .card {
+  max-width: 25rem;
+  width: 20rem;
+  border-radius: 1rem;
+  background: white;
+  position: relative;
+  z-index: 10;
+}
+.container .card img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+.container .card section {
   font-family: "Kumbh Sans", sans-serif;
+  width: 100%;
+}
+.container .card section .dp {
+  position: absolute;
+  width: 6rem;
+  top: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+.container .card section h1 {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 4rem;
   font-weight: 700;
-  color: hsl(228deg, 45%, 44%);
+  color: hsl(229deg, 23%, 23%);
+}
+.container .card section h1 span {
+  color: hsl(0deg, 0%, 59%);
+  font-weight: 400;
+  padding: 0 0.4rem;
+}
+.container .card section p {
+  text-align: center;
+  color: hsl(0deg, 0%, 59%);
+  font-weight: 400;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  margin-bottom: 1.2rem;
+}
+.container .card section ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 1px solid rgba(157, 156, 156, 0.2);
+  padding: 1.5rem 0;
+}
+.container .card section ul li {
+  list-style: none;
+  font-size: 18px;
+  color: hsl(229deg, 23%, 23%);
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.05rem;
+}
+.container .card section ul li span {
+  display: block;
+  font-size: 0.7rem;
+  padding: 0.2rem 0;
+  font-weight: 400;
+  color: hsl(0deg, 0%, 59%);
+  letter-spacing: 0.05rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .container .bg-top {
+    mix-blend-mode: normal;
+    width: 70%;
+    top: -28rem;
+    left: -15rem;
+  }
+  .container .bg-bottom {
+    mix-blend-mode: normal;
+    width: 60%;
+    bottom: -24rem;
+    right: -9rem;
+  }
 }/*# sourceMappingURL=style.css.map */

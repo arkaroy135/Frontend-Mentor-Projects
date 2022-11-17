@@ -20,15 +20,120 @@ $font-kumbh-sans: "Kumbh Sans", sans-serif;
 $Mobile: 375px;
 $Laptop: 1280px;
 
-.attribution {
-  font-size: 11px;
-  font-family: $font-kumbh-sans;
-  font-weight: 400;
-  text-align: center;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.attribution a {
-  font-family: $font-kumbh-sans;
-  font-weight: 700;
-  color: hsl(228, 45%, 44%);
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $Dark-cyan;
+  overflow: hidden;
+  position: relative;
+  .bg-top {
+    mix-blend-mode: soft-light;
+    width: 180%;
+    position: absolute;
+    top: -19rem;
+    left: -29rem;
+  }
+  .bg-bottom {
+    width: 180%;
+    position: absolute;
+    bottom: -17rem;
+    right: -29rem;
+  }
+  .card {
+    max-width: 25rem;
+    width: 20rem;
+    border-radius: 1rem;
+    background: white;
+    position: relative;
+    z-index: 10;
+    img {
+      width: 100%;
+      border-radius: 1rem 1rem 0 0;
+    }
+    section {
+      font-family: $font-kumbh-sans;
+      width: 100%;
+      .dp {
+        position: absolute;
+        width: 6rem;
+        top: 22%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        border: 4px solid #fff;
+      }
+      h1 {
+        font-size: $Body-font-size;
+        text-align: center;
+        margin-top: 4rem;
+        font-weight: 700;
+        color: $Very-dark-desaturated-blue;
+        span {
+          color: $Dark-gray;
+          font-weight: 400;
+          padding: 0 0.4rem;
+        }
+      }
+      p {
+        text-align: center;
+        color: $Dark-gray;
+        font-weight: 400;
+        padding: 0.5rem 0;
+        font-size: 0.9rem;
+        margin-bottom: 1.2rem;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-top: 1px solid rgba(157, 156, 156, 0.2);
+        padding: 1.5rem 0;
+        li {
+          list-style: none;
+          font-size: $Body-font-size;
+          color: $Very-dark-desaturated-blue;
+          font-weight: 700;
+          text-align: center;
+          letter-spacing: 0.05rem;
+          span {
+            display: block;
+            font-size: 0.7rem;
+            padding: 0.2rem 0;
+            font-weight: 400;
+            color: $Dark-gray;
+            letter-spacing: 0.05rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $Laptop) {
+  .container {
+    .bg-top {
+      mix-blend-mode: normal;
+      width: 70%;
+      top: -28rem;
+      left: -15rem;
+    }
+    .bg-bottom {
+      mix-blend-mode: normal;
+      width: 60%;
+      bottom: -24rem;
+      right: -9rem;
+    }
+  }
 }

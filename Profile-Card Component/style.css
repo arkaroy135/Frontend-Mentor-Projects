@@ -1,1 +1,13 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+.attribution {
+  font-size: 11px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.attribution a {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */

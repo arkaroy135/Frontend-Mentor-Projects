@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+$font-spartan: "League Spartan", sans-serif;
+$body-text: 0.9375rem;
+
+//### Primary
+
+$Very-Dark-Magenta: hsl(300, 43%, 22%);
+$Soft-Pink: hsl(333, 80%, 67%);
+
+//### Neutral
+
+$Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+$Light-Grayish-Magenta: hsl(300, 24%, 96%);
+$White: hsl(0, 0%, 100%);
+
+$tab: 768px;
+$laptop: 1280px;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 3.5rem 1.5rem;
+
+  .art-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .art-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .hero {
+    .details {
+      h1 {
+        text-align: center;
+        font: 700 2.5rem $font-spartan;
+        line-height: 2.1rem;
+        background: linear-gradient(90deg, rgb(216, 28, 28), rgb(22, 22, 222));
+        padding: 1rem 0;
+        background-clip: text;
+        color: transparent;
+      }
+      p {
+        text-align: center;
+        font: 500 1.1rem $font-spartan;
+        color: $Dark-Grayish-Magenta;
+        margin: 0.5rem -0.1rem;
+      }
+    }
+
+    .ratings {
+      padding: 2rem 0;
+      div {
+        background: $Light-Grayish-Magenta;
+        border-radius: 0.5rem;
+        margin: 1rem 0;
+        padding: 1.5rem 0;
+        text-align: center;
+        font: 700 $body-text $font-spartan;
+        color: $Very-Dark-Magenta;
+        img {
+          width: 1.2rem;
+          padding-bottom: 0.3rem;
+        }
+        p {
+          font: 700 1rem $font-spartan;
+          color: $Very-Dark-Magenta;
+        }
+      }
+    }
+  }
+  .comments {
+    .card {
+      background: $Very-Dark-Magenta;
+      margin: 1rem 0;
+      border-radius: 0.5rem;
+      color: $White;
+      padding: 2rem;
+      min-width: 20rem;
+      .person {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        img {
+          width: 2.5rem;
+          height: 2.5rem;
+          border-radius: 50%;
+        }
+        .ids {
+          padding-bottom: 1.5rem;
+          h2 {
+            font: 700 1rem $font-spartan;
+          }
+          small {
+            font: 500 $body-text $font-spartan;
+            color: $Soft-Pink;
+          }
+        }
+      }
+      p {
+        font: 500 1rem $font-spartan;
+        line-height: 1.3rem;
+      }
+    }
+  }
+}

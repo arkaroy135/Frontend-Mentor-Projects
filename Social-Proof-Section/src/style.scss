@@ -85,6 +85,7 @@ $laptop: 1280px;
       }
     }
   }
+
   .comments {
     .card {
       background: $Very-Dark-Magenta;
@@ -116,6 +117,65 @@ $laptop: 1280px;
       p {
         font: 500 1rem $font-spartan;
         line-height: 1.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  .container {
+    .hero {
+      display: flex;
+      padding-bottom: 2.5rem;
+      justify-content: center;
+      align-items: center;
+      .details {
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.5rem;
+        padding: 0 8rem;
+        h1 {
+          text-align: left;
+          font: 700 3.5rem $font-spartan;
+          line-height: 3.2rem;
+        }
+        p {
+          text-align: left;
+          font: 500 1.1rem $font-spartan;
+          line-height: 1.5rem;
+        }
+      }
+      .ratings {
+        div {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.2rem;
+          padding: 1.3rem 3rem;
+          margin: 0.7rem 0;
+          p {
+            padding-left: 1rem;
+          }
+        }
+        #report-guru {
+          margin-left: 4rem;
+        }
+        #best-tech {
+          margin-left: 8rem;
+        }
+      }
+    }
+    .comments {
+      display: flex;
+      .card {
+        width: 21.5rem;
+        height: fit-content;
+        margin-left: 2.2rem;
+      }
+      #irene {
+        margin-top: 2rem;
+      }
+      #anne {
+        margin-top: 3rem;
       }
     }
   }

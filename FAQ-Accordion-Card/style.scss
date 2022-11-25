@@ -1,0 +1,15 @@
+@use "./scss/color" as *;
+@use "./scss/font" as *;
+@use "./scss/layout" as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background: linear-gradient($Soft-violet, $Soft-blue);
+}

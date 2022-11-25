@@ -11,5 +11,78 @@
 }
 
 .container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient($Soft-violet, $Soft-blue);
+
+  .hidden {
+    display: none;
+  }
+
+  .rotate {
+    rotate: 180deg;
+  }
+
+  .card {
+    background: #fff;
+    width: 20rem;
+    position: relative;
+    border-radius: 1.5rem;
+    .illustration {
+      display: flex;
+      .shadow {
+        margin: 0 3rem;
+        width: 14rem;
+      }
+      .main-image {
+        position: absolute;
+        width: 14rem;
+        inset: -6.35rem;
+        margin: 0 auto;
+      }
+    }
+    .questions {
+      padding: 1.5rem;
+      h1 {
+        text-align: center;
+        padding-bottom: 1rem;
+        font: $font-kumbh-heading;
+        color: $text-color-focus;
+      }
+      button {
+        background: none;
+        outline: none;
+        border: 0;
+        border-bottom: 1px solid $dividers;
+        padding: 0.8rem;
+        width: 100%;
+        text-align: left;
+        position: relative;
+        cursor: pointer;
+        font: $font-kumbh-button;
+        color: $text-color-normal;
+        transition: all ease-in-out 0.2s;
+        img {
+          position: absolute;
+          top: 1.2rem;
+          right: 0.5rem;
+          cursor: pointer;
+          transition: all ease-in-out 0.3s;
+        }
+        p {
+          font: $font-kumbh-body;
+          color: $text-color-dropdown;
+          padding: 0.5rem 0;
+        }
+        &:hover {
+          color: $text-color-hover;
+        }
+        &:focus {
+          color: $text-color-focus;
+        }
+      }
+    }
+  }
 }

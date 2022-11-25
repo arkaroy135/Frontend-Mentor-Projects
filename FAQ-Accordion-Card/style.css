@@ -8,5 +8,75 @@
 }
 
 .container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
+}
+.container .hidden {
+  display: none;
+}
+.container .rotate {
+  rotate: 180deg;
+}
+.container .card {
+  background: #fff;
+  width: 20rem;
+  position: relative;
+  border-radius: 1.5rem;
+}
+.container .card .illustration {
+  display: flex;
+}
+.container .card .illustration .shadow {
+  margin: 0 3rem;
+  width: 14rem;
+}
+.container .card .illustration .main-image {
+  position: absolute;
+  width: 14rem;
+  inset: -6.35rem;
+  margin: 0 auto;
+}
+.container .card .questions {
+  padding: 1.5rem;
+}
+.container .card .questions h1 {
+  text-align: center;
+  padding-bottom: 1rem;
+  font: 700 1.8rem "Kumbh Sans", sans-serif;
+  color: hsl(238deg, 29%, 16%);
+}
+.container .card .questions button {
+  background: none;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid hsl(240deg, 5%, 91%);
+  padding: 0.8rem;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+  font: 700 12px "Kumbh Sans", sans-serif;
+  color: hsl(237deg, 12%, 33%);
+  transition: all ease-in-out 0.2s;
+}
+.container .card .questions button img {
+  position: absolute;
+  top: 1.2rem;
+  right: 0.5rem;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+.container .card .questions button p {
+  font: 400 12px "Kumbh Sans", sans-serif;
+  color: hsl(240deg, 6%, 50%);
+  padding: 0.5rem 0;
+}
+.container .card .questions button:hover {
+  color: hsl(14deg, 88%, 65%);
+}
+.container .card .questions button:focus {
+  color: hsl(238deg, 29%, 16%);
 }/*# sourceMappingURL=style.css.map */

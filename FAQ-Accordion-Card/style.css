@@ -25,15 +25,19 @@
   width: 20rem;
   position: relative;
   border-radius: 1.5rem;
+  box-shadow: 0 0.4rem 2rem rgb(70, 70, 70);
 }
-.container .card .illustration {
+.container .card .desktop-illustration {
+  display: none;
+}
+.container .card .mobile-illustration {
   display: flex;
 }
-.container .card .illustration .shadow {
+.container .card .mobile-illustration .shadow {
   margin: 0 3rem;
   width: 14rem;
 }
-.container .card .illustration .main-image {
+.container .card .mobile-illustration .main-image {
   position: absolute;
   width: 14rem;
   inset: -6.35rem;
@@ -79,4 +83,53 @@
 }
 .container .card .questions button:focus {
   color: hsl(238deg, 29%, 16%);
+}
+
+@media screen and (min-width: 1280px) {
+  .container .card {
+    display: flex;
+    width: 45rem;
+    padding: 2rem;
+    overflow: hidden;
+  }
+  .container .card .desktop-illustration {
+    display: flex;
+    width: 50%;
+  }
+  .container .card .desktop-illustration .bshadow {
+    position: absolute;
+    height: 45rem;
+    width: 40rem;
+    top: -14rem;
+    left: -20.2rem;
+  }
+  .container .card .desktop-illustration .bmain-image {
+    position: absolute;
+    width: 23rem;
+    top: 3rem;
+    left: -3.5rem;
+  }
+  .container .card .desktop-illustration .box {
+    position: absolute;
+    width: 10rem;
+    top: 9.3rem;
+    left: -4.8rem;
+  }
+  .container .card .mobile-illustration {
+    display: none;
+  }
+  .container .card .questions {
+    width: 50%;
+  }
+  .container .card .questions h1 {
+    text-align: left;
+    padding-left: 1rem;
+    font-size: 2.3rem;
+  }
+  .container .card .questions button {
+    font-size: 0.8rem;
+  }
+  .container .card .questions button p {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=style.css.map */

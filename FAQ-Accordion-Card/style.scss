@@ -57,7 +57,9 @@
         font: $font-kumbh-heading;
         color: $text-color-focus;
       }
-      button {
+      a {
+        display: flex;
+        flex-direction: column;
         background: none;
         outline: none;
         border: 0;
@@ -98,29 +100,27 @@
     .card {
       display: flex;
       width: 45rem;
-      padding: 2rem;
-      overflow: hidden;
+      border-radius: 1rem;
+      padding: 2rem 0;
       .desktop-illustration {
         display: flex;
         width: 50%;
-        .bshadow {
-          position: absolute;
-          height: 45rem;
-          width: 40rem;
-          top: -14rem;
-          left: -20.2rem;
-        }
+        background: url(./images/bg-pattern-desktop.svg) no-repeat #fff;
+        background-position-x: -24.7rem;
+        background-position-y: -13.4rem;
+        background-size: 45rem;
+        margin: -2rem 0;
+        border-radius: 1.5rem 0 0 1.5rem;
+        overflow: hidden;
         .bmain-image {
-          position: absolute;
-          width: 23rem;
-          top: 3rem;
-          left: -3.5rem;
+          height: 18.7rem;
+          transform: translate(-4.3rem, 1.7rem);
         }
         .box {
           position: absolute;
-          width: 10rem;
-          top: 9.3rem;
-          left: -4.8rem;
+          width: 9.1rem;
+          top: 9.1rem;
+          left: -4.4rem;
         }
       }
 
@@ -135,7 +135,7 @@
           padding-left: 1rem;
           font-size: 2.3rem;
         }
-        button {
+        a {
           font-size: 0.8rem;
           p {
             font-size: 0.8rem;

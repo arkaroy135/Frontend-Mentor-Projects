@@ -1,0 +1,20 @@
+@use "./color" as *;
+@use "./typography" as *;
+@use "./layout" as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  text-align: center;
+  font: 600 11px $font-poppins;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

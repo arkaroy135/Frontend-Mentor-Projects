@@ -1,6 +1,6 @@
 # Frontend Mentor - Four card feature section solution
 
-This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK).
 
 ## Table of contents
 
@@ -25,60 +25,51 @@ Users should be able to:
 
 ### Screenshot
 
-- [Mobile View](./images/Frontend%20Mentor%20Four%20card%20feature%20section-mobile.png)
-- [Tablet View](./images/Frontend%20Mentor%20Four%20card%20feature%20section-tab.png)
-- [Big-Screen View](./)
+- [Mobile View](./screenshots/mobile-view.png)
+- [Tablet View](./screenshots/tablet-view.png)
+- [Laptop View](./screenshots/laptop-view.png)
+- [Desktop View](./screenshots/desktop-view.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/arkaroy135/Frontend-Mentor-Projects/tree/master/Four-Card-Feature-Section)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://arkaroy135.github.io/Frontend-Mentor-Projects/Four-Card-Feature-Section/)
 
 ## My process
+
+I learnt to use grid layout effectively in this project. It was harder at first but it was fun.
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- Sass custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [Styled Components](https://styled-components.com/) - For styles
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+img {
+  transform: translate(14.5rem, 1.5rem);
+}
+
+#card1,
+#card4 {
+  grid-row: span 2;
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+I learned that by using this I can move elements without positioning it as absolute. And also learnt how to use grid-row/grid-column span.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I need to learn about proper use of HTML tags and CSS properties. There is a lot to learn on the way.
 
 ## Author
 
-- Frontend Mentor - [@arkaroy135](https://www.frontendmentor.io/profile/@arkaroy135)
+- Roy - [@arkaroy135](https://www.frontendmentor.io/profile/@arkaroy135)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+I would like to thank the developers of Frontend Mentor community whose codes helped me a lot in learning the proper uses of HTML tags and CSS properties. This project is not an exception of that. I am learning new things everyday because of this developing community.

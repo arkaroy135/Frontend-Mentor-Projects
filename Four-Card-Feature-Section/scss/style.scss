@@ -121,3 +121,35 @@ footer {
     }
   }
 }
+
+@media screen and (min-width: $laptop-view) {
+  .container {
+    padding: 0;
+    #details {
+      h1,
+      h2 {
+        font-size: 2.4rem;
+      }
+      p {
+        font-size: 1.1rem;
+        padding: 0.5rem 22rem;
+      }
+    }
+    #features {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      max-width: 73rem;
+      grid-auto-flow: column;
+      margin: 0 auto;
+      #card1,
+      #card4 {
+        grid-row: span 2;
+        align-self: center;
+        margin-top: -1rem;
+      }
+      #card3 {
+        margin-top: -1rem;
+      }
+    }
+  }
+}

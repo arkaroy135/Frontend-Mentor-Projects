@@ -10,11 +10,17 @@
   box-sizing: border-box;
 }
 
-.attribution {
-  text-align: center;
-  font: 600 11px $font-poppins;
+.container {
+  height: calc(100vh - 1.5rem);
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
+footer {
+  height: 1.5rem;
+  .attribution {
+    text-align: center;
+    font: 600 0.6875rem $font-poppins;
+    a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
 }

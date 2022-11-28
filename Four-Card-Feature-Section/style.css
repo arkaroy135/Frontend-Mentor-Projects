@@ -1,1 +1,1 @@
-@import"https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap";*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}.attribution{text-align:center;font:600 11px "Poppins",sans-serif}.attribution a{color:#3e52a3}
+@import"https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap";*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}.container{height:calc(100vh - 1.5rem)}footer{height:1.5rem}footer .attribution{text-align:center;font:600 .6875rem "Poppins",sans-serif}footer .attribution a{color:#3e52a3}

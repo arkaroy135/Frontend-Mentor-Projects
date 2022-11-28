@@ -11,7 +11,65 @@
 }
 
 .container {
-  height: calc(100vh - 1.5rem);
+  min-height: calc(100vh - 1.5rem);
+  padding: 1.8rem;
+  background: $Very-Light-Gray;
+
+  #details {
+    text-align: center;
+    color: $Very-Dark-Blue;
+    padding: 2rem 0;
+    h1 {
+      font: 200 1.55rem $font-poppins;
+    }
+    h2 {
+      font: 600 1.55rem $font-poppins;
+      padding-bottom: 1rem;
+    }
+    p {
+      font: 400 $body-text $font-poppins;
+      color: $Grayish-Blue;
+      letter-spacing: 0.01rem;
+    }
+  }
+
+  #features {
+    .card {
+      width: 20rem;
+      height: 15rem;
+      padding: 2rem 1.6rem;
+      background: #fff;
+      border-radius: 0.5rem;
+      margin: 2rem 0;
+      box-shadow: 0 1rem 1.5rem rgb(215, 215, 215);
+      h2 {
+        font: 600 1.4rem $font-poppins;
+        color: $Very-Dark-Blue;
+        padding-bottom: 0.5rem;
+      }
+      p {
+        color: $Grayish-Blue;
+        font: 400 0.87rem $font-poppins;
+        line-height: 1.5rem;
+      }
+      img {
+        width: 3.8rem;
+        transform: translate(13rem, 1.5rem);
+      }
+    }
+    #card1 {
+      border-top: 0.25rem solid $Cyan;
+    }
+    #card2 {
+      border-top: 0.25rem solid $Red;
+    }
+    #card3 {
+      border-top: 0.25rem solid $Orange;
+    }
+    #card4 {
+      border-top: 0.25rem solid $Blue;
+    }
+  }
 }
 
 footer {

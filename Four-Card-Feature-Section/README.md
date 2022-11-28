@@ -1,8 +1,10 @@
 # Frontend Mentor - Four card feature section solution
 
-This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK).
+![Design preview for the 3-column preview card component coding challenge](./design/desktop-preview.jpg)
 
-(./design/desktop-preview.jpg)
+# Welcome
+
+This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK).
 
 ## Table of contents
 

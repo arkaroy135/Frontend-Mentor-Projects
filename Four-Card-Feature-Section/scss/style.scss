@@ -11,7 +11,8 @@
 }
 
 .container {
-  min-height: calc(100vh - 1.5rem);
+  // min-height: calc(100vh - 1.5rem);
+  min-height: 100vh;
   padding: 1.8rem;
   background: $Very-Light-Gray;
 
@@ -35,12 +36,12 @@
 
   #features {
     .card {
-      width: 20rem;
+      max-width: 23rem;
       height: 15rem;
       padding: 2rem 1.6rem;
       background: #fff;
       border-radius: 0.5rem;
-      margin: 2rem 0;
+      margin: 2rem auto;
       box-shadow: 0 1rem 1.5rem rgb(215, 215, 215);
       h2 {
         font: 600 1.4rem $font-poppins;
@@ -79,6 +80,44 @@ footer {
     font: 600 0.6875rem $font-poppins;
     a {
       color: hsl(228, 45%, 44%);
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-view) {
+  .container {
+    padding: 8rem 1.8rem 0 1.8rem;
+    #details {
+      h1,
+      h2 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.3rem;
+        padding: 1rem 10rem;
+      }
+    }
+    #features {
+      display: grid;
+      justify-items: center;
+      align-self: center;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      max-width: 50rem;
+      margin: 1rem auto;
+      .card {
+        padding: 2rem;
+        height: 15.5rem;
+        h2 {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+        img {
+          transform: translate(14.5rem, 1.5rem);
+        }
+      }
     }
   }
 }

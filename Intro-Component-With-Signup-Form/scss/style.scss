@@ -19,69 +19,77 @@ body {
   min-height: calc(100vh - 1rem);
   padding: 1.5rem;
 
-  .desc {
-    color: $White;
-    text-align: center;
-    max-width: 40rem;
-    margin: 4.1rem auto;
-    h1 {
-      font: 700 1.7rem $font-poppins;
-      line-height: 2.3rem;
-    }
-    p {
-      font: 500 $body-text $font-poppins;
-      padding-top: 1.5rem;
-    }
-  }
-
-  .trial-form {
-    text-align: center;
-    width: 30rem;
-    margin: auto;
-    .offer {
-      background-color: $Blue;
+  .card {
+    .desc {
       color: $White;
-      padding: 1.2rem 4rem;
-      font: 500 $body-text $font-poppins;
-      border: 2px dashed $White;
-      border-radius: 0.7rem;
-      box-shadow: 0 0.5rem rgba(0, 0, 0, 0.145);
+      text-align: center;
+      max-width: 40rem;
+      margin: 4.1rem auto;
+      h1 {
+        font: 700 1.7rem $font-poppins;
+        line-height: 2.3rem;
+      }
+      p {
+        font: 500 $body-text $font-poppins;
+        padding-top: 1.5rem;
+      }
     }
-    form {
-      display: flex;
-      flex-direction: column;
-      margin-top: 1.5rem;
-      padding: 1.5rem;
-      background: $White;
-      border-radius: 0.7rem;
-      box-shadow: 0 0.5rem rgba(0, 0, 0, 0.145);
-      gap: 1rem;
-      input {
-        padding: 1rem;
-        border: 0.0625rem solid rgba(0, 0, 0, 0.18);
-        border-radius: 0.3rem;
-        font: 600 0.9rem $font-poppins;
-        color: $Dark-Blue;
-      }
-      button {
-        background: $Green;
+
+    .trial-form {
+      text-align: center;
+      max-width: 35rem;
+      margin: auto;
+      .offer {
+        background-color: $Blue;
         color: $White;
-        padding: 1rem 2.5rem;
-        border: 0;
-        box-shadow: 0 -0.25rem inset rgba(0, 0, 0, 0.1);
-        border-radius: 0.3rem;
-        font: 600 $body-text $font-poppins;
-        letter-spacing: 0.03rem;
-        text-transform: uppercase;
+        padding: 1.2rem 4rem;
+        font: 500 $body-text $font-poppins;
+        border: 2px dashed $White;
+        border-radius: 0.7rem;
+        box-shadow: 0 0.5rem rgba(0, 0, 0, 0.145);
+        cursor: pointer;
       }
-      small {
-        color: $Grayish-Blue;
-        font: 500 0.7rem $font-poppins;
-        padding: 0 1.2rem;
-        a {
-          text-decoration: none;
-          color: $Red;
-          font-weight: 700;
+      form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+        padding: 1.5rem;
+        background: $White;
+        border-radius: 0.7rem;
+        box-shadow: 0 0.5rem rgba(0, 0, 0, 0.145);
+        gap: 1rem;
+        input {
+          padding: 1rem;
+          border: 0.0625rem solid rgba(0, 0, 0, 0.18);
+          border-radius: 0.3rem;
+          font: 600 0.9rem $font-poppins;
+          color: $Dark-Blue;
+        }
+        button {
+          background: $Green;
+          color: $White;
+          padding: 1rem 2.5rem;
+          border: 0;
+          box-shadow: 0 -0.25rem inset rgba(0, 0, 0, 0.1);
+          border-radius: 0.3rem;
+          font: 600 $body-text $font-poppins;
+          letter-spacing: 0.03rem;
+          text-transform: uppercase;
+          cursor: pointer;
+          &:hover {
+            opacity: 90%;
+            transform: translateY(-0.0625rem);
+          }
+        }
+        small {
+          color: $Grayish-Blue;
+          font: 500 0.7rem $font-poppins;
+          padding: 0 1.2rem;
+          a {
+            text-decoration: none;
+            color: $Red;
+            font-weight: 700;
+          }
         }
       }
     }
@@ -99,22 +107,23 @@ body {
 
 @media screen and(min-width: $iPad-mini-view) {
   .container {
-    margin-top: 5rem;
-    .desc {
-      h1 {
-        font-size: 2rem;
+    .card {
+      .desc {
+        h1 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.1rem;
+        }
       }
-      p {
-        font-size: 1.1rem;
-      }
-    }
-    .trial-form {
-      .offer {
-        font-size: 1.05rem;
-        padding: 1.4rem 4rem;
-      }
-      form {
-        margin-top: 2rem;
+      .trial-form {
+        .offer {
+          font-size: 1.05rem;
+          padding: 1.4rem 4rem;
+        }
+        form {
+          margin-top: 2rem;
+        }
       }
     }
   }
@@ -122,25 +131,60 @@ body {
 
 @media screen and (min-width: $iPad-pro13inch-view) {
   .container {
-    margin-top: 10rem;
-    .desc {
-      h1 {
-        font-size: 2.3rem;
+    .card {
+      .desc {
+        h1 {
+          font-size: 2.3rem;
+        }
+        p {
+          font-size: 1.2rem;
+          padding-top: 2rem;
+        }
       }
-      p {
-        font-size: 1.2rem;
-        padding-top: 2rem;
+      .trial-form {
+        .offer {
+          font-size: 1.1rem;
+          padding: 1.5rem 4rem;
+        }
+        form {
+          margin-top: 4rem;
+          padding: 2rem;
+        }
       }
     }
-    .trial-form {
-      width: 40rem;
-      .offer {
-        font-size: 1.1rem;
-        padding: 1.5rem 4.5rem;
+  }
+}
+
+@media screen and (min-width: $laptop-view) {
+  .container {
+    background: url(/images/bg-intro-desktop.png) $Red;
+    .card {
+      display: grid;
+      grid-auto-flow: column;
+      align-items: center;
+      margin: 6rem auto;
+      max-width: 90%;
+      .desc {
+        padding: 0 3rem;
+        text-align: left;
+        h1 {
+          font-size: 2.9rem;
+          line-height: 3.2rem;
+        }
+        p {
+          font-size: $body-text;
+        }
       }
-      form {
-        margin-top: 4rem;
-        padding: 2rem;
+      .trial-form {
+        max-width: 30rem;
+        .offer {
+          font-size: 1rem;
+          padding: 1.2rem 4rem;
+        }
+        form {
+          margin-top: 2rem;
+          padding: 2rem;
+        }
       }
     }
   }

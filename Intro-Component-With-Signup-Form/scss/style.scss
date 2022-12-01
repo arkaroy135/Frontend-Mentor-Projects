@@ -57,13 +57,32 @@ body {
         background: $White;
         border-radius: 0.7rem;
         box-shadow: 0 0.5rem rgba(0, 0, 0, 0.145);
-        gap: 1rem;
-        input {
-          padding: 1rem;
-          border: 0.0625rem solid rgba(0, 0, 0, 0.18);
-          border-radius: 0.3rem;
-          font: 600 0.9rem $font-poppins;
-          color: $Dark-Blue;
+        gap: 2rem;
+        .message {
+          position: relative;
+          input {
+            padding: 1rem;
+            width: 100%;
+            border: 0.0625rem solid rgba(0, 0, 0, 0.18);
+            border-radius: 0.3rem;
+            font: 600 0.9rem $font-poppins;
+            color: $Dark-Blue;
+          }
+          img {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            display: none;
+          }
+          small {
+            display: none;
+            position: absolute;
+            padding: 0;
+            top: 3.8rem;
+            right: 0;
+            color: $Red;
+            font: 600 0.6875rem $font-poppins;
+          }
         }
         button {
           background: $Green;

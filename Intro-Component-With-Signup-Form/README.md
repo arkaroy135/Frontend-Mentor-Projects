@@ -31,11 +31,11 @@ Users should be able to:
 
 ### Screenshot
 
-![Mobile View](./images/mobile-view.png)
-![iPad Mini View](./images/ipad-mini-view.png)
-![iPad Pro(12.9") View](./images/ipad-pro13inch-view.png)
-![Laptop View](./images/laptop-view.png)
-![Desktop View](./images/desktop-view.png)
+- [Mobile View](./images/mobile-view.png)
+- [iPad Mini View](./images/ipad-mini-view.png)
+- [iPad Pro(12.9") View](./images/ipad-pro13inch-view.png)
+- [Laptop View](./images/laptop-view.png)
+- [Desktop View](./images/desktop-view.png)
 
 ### Links
 

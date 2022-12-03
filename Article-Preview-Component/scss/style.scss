@@ -10,16 +10,105 @@
   box-sizing: border-box;
 }
 
+body {
+  min-height: 100vh;
+  background: $Grayish-Blue;
+}
+
 .container {
   min-height: calc(100vh - 1rem);
   font: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   .card {
     width: 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    background: #fff;
+    border-radius: 1rem;
+    .article-image {
+      img {
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+      }
+    }
+    .article-description {
+      padding: 1.5rem 2rem;
+      margin-top: 0.6rem;
+      h1 {
+        font: 700 1rem $font-Manrope;
+        line-height: 1.5rem;
+        color: $Very-Dark-Grayish-Blue;
+      }
+      p {
+        font: 500 $body-text $font-Manrope;
+        line-height: 1.3rem;
+        color: $Desaturated-Dark-Blue;
+        padding: 1rem 0;
+      }
+      .profile {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1.2rem;
+        .profile-picture {
+          width: 2.5rem;
+          height: 2.5rem;
+          border-radius: 50%;
+        }
+        .profile-details {
+          margin-left: -1.6rem;
+          line-height: 1.5rem;
+          h2 {
+            font: 700 0.9rem $font-Manrope;
+            color: $Very-Dark-Grayish-Blue;
+          }
+          small {
+            font: 500 $body-text $font-Manrope;
+            color: $Desaturated-Dark-Blue;
+          }
+        }
+        #share-button {
+          margin-top: 0.2rem;
+          width: 2.3rem;
+          height: 2.3rem;
+          background: url(/images/icon-share.svg) $Light-Grayish-Blue no-repeat
+            center/50%;
+          border: 0;
+          border-radius: 50%;
+          cursor: pointer;
+          color: transparent;
+          z-index: 1000;
+        }
+        .share-components {
+          display: flex;
+          align-items: center;
+          position: absolute;
+          inset: 0;
+          background: $Desaturated-Dark-Blue;
+          margin: -1rem -2rem -1.5rem -2rem;
+          border-radius: 0 0 1rem 1rem;
+          list-style: none;
+          letter-spacing: 0.5rem;
+          text-transform: uppercase;
+          color: $Grayish-Blue;
+          gap: 1rem;
+          padding-left: 1.8rem;
+          padding-bottom: 0.5rem;
+          span {
+            font: 700 $body-text $font-Manrope;
+          }
+        }
+        .hidden {
+          display: none;
+        }
+      }
+    }
   }
 }
 

@@ -8,21 +8,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font: inherit;
 }
 
 body {
   min-height: 100vh;
-  background: $Grayish-Blue;
+  background: $Light-Grayish-Blue;
 }
 
 .container {
   min-height: calc(100vh - 1rem);
-  font: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
   .card {
     width: 20rem;
+    max-width: 45rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,7 +78,7 @@ body {
           margin-top: 0.2rem;
           width: 2.3rem;
           height: 2.3rem;
-          background: url(/images/icon-share.svg) $Light-Grayish-Blue no-repeat
+          background: url(./images/icon-share.svg) $Light-Grayish-Blue no-repeat
             center/50%;
           border: 0;
           border-radius: 50%;
@@ -90,7 +91,7 @@ body {
           align-items: center;
           position: absolute;
           inset: 0;
-          background: $Desaturated-Dark-Blue;
+          background: $Very-Dark-Grayish-Blue;
           margin: -1rem -2rem -1.5rem -2rem;
           border-radius: 0 0 1rem 1rem;
           list-style: none;
@@ -102,6 +103,7 @@ body {
           span {
             font: 700 $body-text $font-Manrope;
             cursor: default;
+            color: $Light-Grayish-Blue;
           }
           a {
             img {
@@ -123,5 +125,56 @@ body {
   text-align: center;
   a {
     color: $footer-link;
+  }
+}
+
+@media (min-width: $ipad-pro13inch-view) {
+  .container {
+    .card {
+      flex-direction: row;
+      width: 45rem;
+      .article-image {
+        img {
+          width: 18rem;
+          height: 19rem;
+          border-radius: 1rem 0 0 1rem;
+          margin-bottom: -0.25rem;
+        }
+      }
+      .article-description {
+        margin-top: 0;
+        h1 {
+          font: 700 1.3rem $font-Manrope;
+        }
+        .profile {
+          margin-top: 0;
+          .profile-details {
+            justify-content: space-between;
+            margin-left: -8rem;
+          }
+          .share-components {
+            width: 70%;
+            height: 100%;
+            border-radius: 0.5rem;
+            padding: 1.8rem 0;
+            justify-content: center;
+            inset: -3.9rem 15.95rem;
+            letter-spacing: 0.2rem;
+            &::after {
+              content: "";
+              display: block;
+              position: absolute;
+              width: 0;
+              height: 0;
+              border-left: 1rem solid transparent;
+              border-right: 1rem solid transparent;
+              border-bottom: 1rem solid $Very-Dark-Grayish-Blue;
+              rotate: 180deg;
+              inset: 3.4rem 6.7rem;
+            }
+          }
+        }
+      }
+    }
   }
 }

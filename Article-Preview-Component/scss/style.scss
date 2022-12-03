@@ -102,6 +102,12 @@ body {
           padding-bottom: 0.5rem;
           span {
             font: 700 $body-text $font-Manrope;
+            cursor: default;
+          }
+          a {
+            img {
+              cursor: pointer;
+            }
           }
         }
         .hidden {

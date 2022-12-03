@@ -31,10 +31,8 @@ body {
     background: #fff;
     border-radius: 1rem;
     .article-image {
-      img {
-        width: 100%;
-        border-radius: 1rem 1rem 0 0;
-      }
+      width: 100%;
+      border-radius: 1rem 1rem 0 0;
     }
     .article-description {
       padding: 1.5rem 2rem;
@@ -134,12 +132,10 @@ body {
       flex-direction: row;
       width: 45rem;
       .article-image {
-        img {
-          width: 18rem;
-          height: 19rem;
-          border-radius: 1rem 0 0 1rem;
-          margin-bottom: -0.25rem;
-        }
+        width: 18rem;
+        height: 19rem;
+        border-radius: 1rem 0 0 1rem;
+        margin-bottom: -0.25rem;
       }
       .article-description {
         margin-top: 0;

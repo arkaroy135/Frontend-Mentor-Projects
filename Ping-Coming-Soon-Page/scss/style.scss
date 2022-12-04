@@ -1,0 +1,16 @@
+@use "./color" as *;
+@use "./layout" as *;
+@use "./typography" as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+}

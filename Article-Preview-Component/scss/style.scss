@@ -73,17 +73,27 @@ body {
             color: $Desaturated-Dark-Blue;
           }
         }
-        #share-button {
+        .share-button {
           margin-top: 0.2rem;
           width: 2.3rem;
           height: 2.3rem;
-          background: url(./images/icon-share.svg) $Light-Grayish-Blue no-repeat
-            center/50%;
           border: 0;
+          background: $Light-Grayish-Blue;
           border-radius: 50%;
           cursor: pointer;
           color: transparent;
           z-index: 1000;
+          svg {
+            fill: $Desaturated-Dark-Blue;
+            scale: 1.1;
+          }
+        }
+        .active {
+          background: $Desaturated-Dark-Blue;
+          transition: all ease-in-out 0.4s;
+          svg {
+            fill: $Light-Grayish-Blue;
+          }
         }
         .share-components {
           display: flex;
@@ -136,10 +146,8 @@ body {
       width: 43rem;
       overflow: visible;
       .article-image {
-        // width: 18rem;
         height: 17rem;
         border-radius: 1rem 0 0 1rem;
-        // margin-bottom: -0.25rem;
       }
       .article-description {
         margin-top: 0;
@@ -151,6 +159,9 @@ body {
           .profile-details {
             justify-content: space-between;
             margin-left: -8rem;
+          }
+          .active {
+            transition: all ease-in-out 0.2s;
           }
           .share-components {
             width: 70%;

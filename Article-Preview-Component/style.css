@@ -74,16 +74,27 @@ body {
   font: 500 0.8125rem "Manrope", sans-serif;
   color: hsl(214deg, 17%, 51%);
 }
-.container .card .article-description .profile #share-button {
+.container .card .article-description .profile .share-button {
   margin-top: 0.2rem;
   width: 2.3rem;
   height: 2.3rem;
-  background: url(./images/icon-share.svg) hsl(210deg, 46%, 95%) no-repeat center/50%;
   border: 0;
+  background: hsl(210deg, 46%, 95%);
   border-radius: 50%;
   cursor: pointer;
   color: transparent;
   z-index: 1000;
+}
+.container .card .article-description .profile .share-button svg {
+  fill: hsl(214deg, 17%, 51%);
+  scale: 1.1;
+}
+.container .card .article-description .profile .active {
+  background: hsl(214deg, 17%, 51%);
+  transition: all ease-in-out 0.4s;
+}
+.container .card .article-description .profile .active svg {
+  fill: hsl(210deg, 46%, 95%);
 }
 .container .card .article-description .profile .share-components {
   display: flex;
@@ -145,6 +156,9 @@ body {
   .container .card .article-description .profile .profile-details {
     justify-content: space-between;
     margin-left: -8rem;
+  }
+  .container .card .article-description .profile .active {
+    transition: all ease-in-out 0.2s;
   }
   .container .card .article-description .profile .share-components {
     width: 70%;

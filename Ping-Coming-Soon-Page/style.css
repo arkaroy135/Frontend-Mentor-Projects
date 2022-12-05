@@ -8,6 +8,136 @@
   font: inherit;
 }
 
-body {
+.container {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card {
+  max-width: 45rem;
+  padding: 0 1.5rem;
+}
+.container .card header {
+  text-align: center;
+  padding: 5rem 0 2rem 0;
+}
+.container .card header img {
+  width: 4rem;
+}
+.container .card main {
+  text-align: center;
+}
+.container .card main h1 {
+  font: 300 1.4rem "Libre Franklin", sans-serif;
+  padding-bottom: 1rem;
+  color: hsl(0deg, 0%, 59%);
+}
+.container .card main h1 mark {
+  background: transparent;
+  color: hsl(209deg, 33%, 12%);
+  font-weight: 700;
+}
+.container .card main p {
+  font: 500 0.79rem "Libre Franklin", sans-serif;
+  color: hsl(209deg, 33%, 12%);
+  padding-bottom: 1.5rem;
+}
+.container .card main #form {
+  position: relative;
+}
+.container .card main #form #email-id {
+  width: 90%;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid hsl(223deg, 100%, 88%);
+  border-radius: 2rem;
+  font: 300 0.9rem "Libre Franklin", sans-serif;
+}
+.container .card main #form #email-id::-moz-placeholder {
+  color: hsl(0deg, 0%, 59%);
+}
+.container .card main #form #email-id:-ms-input-placeholder {
+  color: hsl(0deg, 0%, 59%);
+}
+.container .card main #form #email-id::placeholder {
+  color: hsl(0deg, 0%, 59%);
+}
+.container .card main #form .error_messege {
+  position: absolute;
+  top: 3.3rem;
+  left: 1.5rem;
+  color: hsl(354deg, 100%, 66%);
+  font: 600 0.7rem "Libre Franklin", sans-serif;
+}
+.container .card main #form .notify {
+  width: 90%;
+  padding: 0.8rem;
+  border-radius: 2rem;
+  border: 0;
+  background: hsl(223deg, 87%, 63%);
+  color: #fff;
+  font: 600 0.8rem "Libre Franklin", sans-serif;
+  margin-top: 0.8rem;
+  box-shadow: 0 0.5rem 0.5rem hsl(223deg, 100%, 88%);
+  cursor: pointer;
+}
+.container .card main #form .notify:hover {
+  opacity: 0.95;
+}
+.container .card main #form .notify:active {
+  transform: translateY(0.1rem);
+}
+.container .card main .dashboard {
+  width: 100%;
+  padding: 4rem 0;
+}
+.container .card footer {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.container .card footer .footer_social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card footer .footer_social a {
+  color: transparent;
+  margin: 0 0 2rem 0;
+}
+.container .card footer .footer_social a svg {
+  width: 2.6rem;
+  height: 2.6rem;
+  margin: 0.4rem;
+  fill: hsl(223deg, 87%, 63%);
+  border: 1px solid hsl(223deg, 100%, 88%);
+  padding: 0.48rem;
+  border-radius: 50%;
+  transition: all ease-in-out 0.3s;
+}
+.container .card footer .footer_social a svg:hover {
+  fill: #fff;
+  background: hsl(223deg, 87%, 63%);
+}
+.container .card footer .footer_legal {
+  color: hsl(0deg, 0%, 59%);
+}
+
+@media (min-width: 1024px) {
+  .container .card header img {
+    width: 6rem;
+  }
+  .container .card main h1 {
+    font-size: 2rem;
+  }
+  .container .card main p {
+    font-size: 1rem;
+  }
+  .container .card main #form {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .container .card main #form .notify {
+    width: 40%;
+    margin: 0;
+  }
 }

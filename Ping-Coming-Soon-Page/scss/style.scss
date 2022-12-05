@@ -11,6 +11,138 @@
   font: inherit;
 }
 
-body {
+.container {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .card {
+    max-width: 45rem;
+    padding: 0 1.5rem;
+    header {
+      text-align: center;
+      padding: 5rem 0 2rem 0;
+      img {
+        width: 4rem;
+      }
+    }
+    main {
+      text-align: center;
+      h1 {
+        font: 300 1.4rem $font-Libre-Franklin;
+        padding-bottom: 1rem;
+        color: $Gray;
+        mark {
+          background: transparent;
+          color: $Very-Dark-Blue;
+          font-weight: 700;
+        }
+      }
+      p {
+        font: 500 0.79rem $font-Libre-Franklin;
+        color: $Very-Dark-Blue;
+        padding-bottom: 1.5rem;
+      }
+      #form {
+        position: relative;
+        #email-id {
+          width: 90%;
+          padding: 0.75rem 1.5rem;
+          border: 1px solid $Pale-Blue;
+          border-radius: 2rem;
+          font: 300 0.9rem $font-Libre-Franklin;
+          &::placeholder {
+            color: $Gray;
+          }
+        }
+        .error_messege {
+          position: absolute;
+          top: 3.3rem;
+          left: 1.5rem;
+          color: $Light-Red;
+          font: 600 0.7rem $font-Libre-Franklin;
+        }
+        .notify {
+          width: 90%;
+          padding: 0.8rem;
+          border-radius: 2rem;
+          border: 0;
+          background: $Blue;
+          color: #fff;
+          font: 600 0.8rem $font-Libre-Franklin;
+          margin-top: 0.8rem;
+          box-shadow: 0 0.5rem 0.5rem $Pale-Blue;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.95;
+          }
+          &:active {
+            transform: translateY(0.1rem);
+          }
+        }
+      }
+      .dashboard {
+        width: 100%;
+        padding: 4rem 0;
+      }
+    }
+    footer {
+      text-align: center;
+      padding-bottom: 2rem;
+      .footer_social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          color: transparent;
+          margin: 0 0 2rem 0;
+          svg {
+            width: 2.6rem;
+            height: 2.6rem;
+            margin: 0.4rem;
+            fill: $Blue;
+            border: 1px solid $Pale-Blue;
+            padding: 0.48rem;
+            border-radius: 50%;
+            transition: all ease-in-out 0.3s;
+            &:hover {
+              fill: #fff;
+              background: $Blue;
+            }
+          }
+        }
+      }
+      .footer_legal {
+        color: $Gray;
+      }
+    }
+  }
+}
+
+@media (min-width: $ipad-pro13inch-View) {
+  .container {
+    .card {
+      header {
+        img {
+          width: 6rem;
+        }
+      }
+      main {
+        h1 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+        #form {
+          display: flex;
+          gap: 0.5rem;
+          .notify {
+            width: 40%;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
 }

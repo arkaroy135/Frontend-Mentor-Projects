@@ -15,7 +15,7 @@ form.addEventListener("submit", (e) => {
     msz.style.color = "hsl(354, 100%, 66%)";
   } else {
     msz.innerText = "Thank You. You will Get Email Updates.";
-    email.style.borderColor = "green";
+    email.style.borderColor = "";
     msz.style.color = "green";
     email.value = "";
   }

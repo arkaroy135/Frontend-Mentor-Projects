@@ -1,8 +1,9 @@
 const email = document.querySelector("#email-id");
 const msz = document.querySelector(".error_messege");
 const btn = document.querySelector(".notify");
+const form = document.querySelector("#form");
 
-btn.addEventListener("click", (e) => {
+form.addEventListener("submit", (e) => {
   if (email.value === "") {
     msz.innerText = "Whoops! It looks like you forgot to add your email";
     email.style.borderColor = "hsl(354, 100%, 66%)";

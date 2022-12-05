@@ -8,9 +8,11 @@ form.addEventListener("submit", (e) => {
   if (email.value === "") {
     msz.innerText = "Whoops! It looks like you forgot to add your email";
     email.style.borderColor = "hsl(354, 100%, 66%)";
+    msz.style.color = "hsl(354, 100%, 66%)";
   } else if (!validateEmail(email.value)) {
     msz.innerText = "Please provide a valid email address";
     email.style.borderColor = "hsl(354, 100%, 66%)";
+    msz.style.color = "hsl(354, 100%, 66%)";
   } else {
     msz.innerText = "Thank You. You will Get Email Updates.";
     msz.style.color = "green";

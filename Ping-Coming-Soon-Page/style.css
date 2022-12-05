@@ -50,6 +50,7 @@
   width: 90%;
   padding: 0.75rem 1.5rem;
   border: 1px solid hsl(223deg, 100%, 88%);
+  outline: 0;
   border-radius: 2rem;
   font: 300 0.9rem "Libre Franklin", sans-serif;
 }

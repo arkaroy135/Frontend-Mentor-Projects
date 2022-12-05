@@ -4,16 +4,17 @@ const btn = document.querySelector(".notify");
 const form = document.querySelector("#form");
 
 form.addEventListener("submit", (e) => {
+  e.preventDefault();
   if (email.value === "") {
     msz.innerText = "Whoops! It looks like you forgot to add your email";
     email.style.borderColor = "hsl(354, 100%, 66%)";
-    e.preventDefault();
   } else if (!validateEmail(email.value)) {
     msz.innerText = "Please provide a valid email address";
     email.style.borderColor = "hsl(354, 100%, 66%)";
-    e.preventDefault();
   } else {
-    alert("Thank You. You will Get Email Updates.");
+    msz.innerText = "Thank You. You will Get Email Updates.";
+    msz.style.color = "green";
+    email.value = "";
   }
 });
 

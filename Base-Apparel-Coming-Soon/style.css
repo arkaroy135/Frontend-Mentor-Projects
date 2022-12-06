@@ -11,3 +11,126 @@ body {
   min-height: 100vh;
   font: inherit;
 }
+
+.container header {
+  padding: 1.8rem 2rem;
+}
+.container header .logo {
+  width: 6rem;
+}
+.container .desc {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.container .desc h1 {
+  font: 600 2.7rem "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  line-height: 2.8rem;
+  color: hsl(0deg, 6%, 24%);
+}
+.container .desc h1 mark {
+  font-weight: 300;
+  color: hsl(0deg, 36%, 70%);
+  background: transparent;
+}
+.container .desc p {
+  font: 400 0.9rem "Josefin Sans", sans-serif;
+  padding: 1rem 0;
+  color: hsl(0deg, 36%, 70%);
+  line-height: 1.5rem;
+}
+.container .desc #form {
+  padding: 1.3rem 0;
+  position: relative;
+}
+.container .desc #form #user_email {
+  width: 100%;
+  padding: 0.9rem 1.3rem;
+  border: 1px solid rgb(210, 210, 210);
+  outline: 0;
+  border-radius: 1.5rem;
+  font: 400 0.8rem "Josefin Sans", sans-serif;
+  color: hsl(0deg, 6%, 24%);
+}
+.container .desc #form #user_email::-moz-placeholder {
+  font: 400 0.8rem "Josefin Sans", sans-serif;
+  color: hsl(0deg, 36%, 70%);
+}
+.container .desc #form #user_email:-ms-input-placeholder {
+  font: 400 0.8rem "Josefin Sans", sans-serif;
+  color: hsl(0deg, 36%, 70%);
+}
+.container .desc #form #user_email::placeholder {
+  font: 400 0.8rem "Josefin Sans", sans-serif;
+  color: hsl(0deg, 36%, 70%);
+}
+.container .desc #form .error {
+  position: absolute;
+  display: none;
+  top: 1.5rem;
+  right: 4.3rem;
+  padding-top: 0.1rem;
+}
+.container .desc #form button {
+  position: absolute;
+  width: 3.7rem;
+  height: 2.75rem;
+  border-radius: 1.7rem;
+  background: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
+  border: 0;
+  outline: 0;
+  top: 1.3rem;
+  right: -0.1rem;
+  color: transparent;
+  padding-top: 0.2rem;
+  cursor: pointer;
+}
+.container .desc #form button:active {
+  opacity: 0.9;
+  box-shadow: 0 0.8rem 0.6rem hsl(0deg, 36%, 70%);
+}
+.container .desc #form .error-messege {
+  font: 400 0.8rem "Josefin Sans", sans-serif;
+  text-align: left;
+  padding-left: 0.7rem;
+}
+
+@media (min-width: 1280px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: url(../images/bg-pattern-desktop.svg);
+  }
+  .container header {
+    padding-left: 9rem;
+    padding-top: 4rem;
+  }
+  .container header .logo {
+    width: 12rem;
+  }
+  .container .hero {
+    grid-row: span 2;
+    margin-left: 3.85rem;
+  }
+  .container .desc {
+    text-align: left;
+    padding-left: 9rem;
+    margin-top: -3rem;
+  }
+  .container .desc h1 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+  .container .desc p {
+    padding-right: 0.4rem;
+    font-size: 1rem;
+  }
+  .container .desc #form .error {
+    top: 1.8rem;
+    right: 5rem;
+  }
+  .container .desc #form button {
+    width: 4.5rem;
+  }
+}

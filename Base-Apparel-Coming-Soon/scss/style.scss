@@ -14,3 +14,122 @@ body {
   min-height: 100vh;
   font: inherit;
 }
+
+.container {
+  header {
+    padding: 1.8rem 2rem;
+    .logo {
+      width: 6rem;
+    }
+  }
+  .desc {
+    text-align: center;
+    padding: 4rem 2rem;
+    h1 {
+      font: 600 2.7rem $font-Josefin-Sans;
+      text-transform: uppercase;
+      letter-spacing: 0.5rem;
+      line-height: 2.8rem;
+      color: $Dark-Grayish-Red;
+      mark {
+        font-weight: 300;
+        color: $Desaturated-Red;
+        background: transparent;
+      }
+    }
+    p {
+      font: 400 0.9rem $font-Josefin-Sans;
+      padding: 1rem 0;
+      color: $Desaturated-Red;
+      line-height: 1.5rem;
+    }
+    #form {
+      padding: 1.3rem 0;
+      position: relative;
+      #user_email {
+        width: 100%;
+        padding: 0.9rem 1.3rem;
+        border: 1px solid rgb(210, 210, 210);
+        outline: 0;
+        border-radius: 1.5rem;
+        font: 400 0.8rem $font-Josefin-Sans;
+        color: $Dark-Grayish-Red;
+        &::placeholder {
+          font: 400 0.8rem $font-Josefin-Sans;
+          color: $Desaturated-Red;
+        }
+      }
+      .error {
+        position: absolute;
+        display: none;
+        top: 1.5rem;
+        right: 4.3rem;
+        padding-top: 0.1rem;
+      }
+      button {
+        position: absolute;
+        width: 3.7rem;
+        height: 2.75rem;
+        border-radius: 1.7rem;
+        background: $button;
+        border: 0;
+        outline: 0;
+        top: 1.3rem;
+        right: -0.1rem;
+        color: transparent;
+        padding-top: 0.2rem;
+        cursor: pointer;
+        &:active {
+          opacity: 0.9;
+          box-shadow: 0 0.8rem 0.6rem $Desaturated-Red;
+        }
+      }
+      .error-messege {
+        font: 400 0.8rem $font-Josefin-Sans;
+        text-align: left;
+        padding-left: 0.7rem;
+      }
+    }
+  }
+}
+
+@media (min-width: $Laptop-View) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: url(../images/bg-pattern-desktop.svg);
+    header {
+      padding-left: 9rem;
+      padding-top: 4rem;
+      .logo {
+        width: 12rem;
+      }
+    }
+    .hero {
+      grid-row: span 2;
+      margin-left: 3.85rem;
+    }
+    .desc {
+      text-align: left;
+      padding-left: 9rem;
+      margin-top: -3rem;
+      h1 {
+        font-size: 4rem;
+        line-height: 4.5rem;
+      }
+      p {
+        padding-right: 0.4rem;
+        font-size: 1rem;
+      }
+      #form {
+        .error {
+          top: 1.8rem;
+          right: 5rem;
+        }
+        button {
+          width: 4.5rem;
+        }
+      }
+    }
+  }
+}

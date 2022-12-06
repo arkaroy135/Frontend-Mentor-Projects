@@ -16,22 +16,22 @@
 <body>
 
   <div class="container">
-    <header class="logo">
-      <img src="./images/logo.svg" alt="brand-logo">
+    <header>
+      <img src="./images/logo.svg" alt="brand-logo" class="logo">
     </header>
     <picture class="hero">
       <source media="(min-width: 64rem)" srcset="./images/hero-desktop.jpg" aria-hidden="true">
       <img src="./images/hero-mobile.jpg" alt="" aria-hidden="true">
     </picture>
     <main class="desc">
-      <h1>We're coming soon</h1>
+      <h1><mark>We're</mark> coming soon</h1>
       <p>Hello fellow shoppers! We're currently building our new fashion store.
         Add your email below to stay up-to-date with announcements and our launch deals.</p>
-      <form method="post" id="form">
+      <form method="post" id="form" novalidate>
         <input type="email" id="user_email" placeholder="Email Address">
-        <img src="./images/icon-error.svg" alt="error">
+        <img src="./images/icon-error.svg" alt="error" class="error">
         <button type="submit">.<img src="./images/icon-arrow.svg" alt="" aria-hidden="true"></button>
-        <p class="error-messege hidden"></p>
+        <p class="error-messege"></p>
       </form>
     </main>
   </div>

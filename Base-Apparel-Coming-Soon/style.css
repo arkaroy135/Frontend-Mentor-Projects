@@ -68,7 +68,7 @@ body {
 .container .desc #form .error {
   position: absolute;
   display: none;
-  top: 1.5rem;
+  top: 1.75rem;
   right: 4.3rem;
   padding-top: 0.1rem;
 }
@@ -91,7 +91,7 @@ body {
   box-shadow: 0 0.8rem 0.6rem hsl(0deg, 36%, 70%);
 }
 .container .desc #form .error-messege {
-  font: 400 0.8rem "Josefin Sans", sans-serif;
+  font: 400 0.65rem "Josefin Sans", sans-serif;
   text-align: left;
   padding-left: 0.7rem;
 }

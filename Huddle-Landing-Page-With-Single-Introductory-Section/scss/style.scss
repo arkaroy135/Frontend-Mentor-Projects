@@ -14,7 +14,7 @@
 body {
   min-height: 100vh;
   min-width: 100vw;
-  background: url(../images/bg-mobile.svg) no-repeat;
+  background: url(/images/bg-mobile.svg) no-repeat;
   background-color: $Violet;
   padding: 2rem;
 
@@ -85,7 +85,7 @@ body {
 @media (min-width: $Laptop-view) {
   body {
     padding: 3rem;
-    background: url(../images/bg-desktop.svg) no-repeat;
+    background: url(/images/bg-desktop.svg) no-repeat;
     background-color: $Violet;
     background-size: contain;
 

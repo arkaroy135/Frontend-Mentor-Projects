@@ -1,0 +1,128 @@
+@use "./color" as *;
+@use "./layout" as *;
+@use "./typography" as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+.container {
+  min-height: 100vh;
+  background: $Light-Gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .card {
+    width: 20rem;
+    background: white;
+    border-radius: 0.5rem;
+    .content1 {
+      padding: 2rem 1.5rem;
+      .content1_heading {
+        font: 700 1.33rem $font-Karla;
+        color: $Cyan;
+        padding-bottom: 1rem;
+      }
+      .content1_subhading {
+        font: 700 $body-text $font-Karla;
+        color: $Bright-Yellow;
+        padding-bottom: 1rem;
+      }
+      .content1_paragraph {
+        font: 400 0.85rem $font-Karla;
+        line-height: 1.5rem;
+        color: $Grayish-Blue;
+      }
+    }
+    .content2 {
+      padding: 2rem 1.5rem;
+      background: $Cyan;
+      color: white;
+      .content2_heading {
+        font: 700 1.15rem $font-Karla;
+        padding-bottom: 1rem;
+      }
+      .content2_offer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 0.5rem;
+        .span1 {
+          font: 700 2rem $font-Karla;
+        }
+        .span2 {
+          font: 400 0.95rem $font-Karla;
+          color: $Light-Gray;
+          padding-left: 0.65rem;
+        }
+      }
+      .content2_suboffer {
+        font: 400 0.95rem $font-Karla;
+        padding-bottom: 1.5rem;
+      }
+      .content2_button {
+        width: 100%;
+        padding: 0.9rem 0;
+        font: 700 1.1rem $font-Karla;
+        background: $Bright-Yellow;
+        color: white;
+        border-radius: 0.5rem;
+        border: 0;
+        box-shadow: 0 0.8rem 1rem rgba(128, 128, 128, 0.326);
+        cursor: pointer;
+      }
+    }
+    .content3 {
+      background-color: $Light-Cyan;
+      color: white;
+      padding: 2rem 1.5rem;
+      border-radius: 0 0 0.5rem 0.5rem;
+      .content3_heading {
+        font: 700 1.2rem $font-Karla;
+        padding-bottom: 1rem;
+      }
+      .content3_list {
+        list-style: none;
+        font: 400 0.9rem $font-Karla;
+        li {
+          padding: 0.15rem 0;
+          cursor: default;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $ipad-pro13inch-view) {
+  .container {
+    .card {
+      width: 39rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      .content1 {
+        grid-column: span 2;
+        height: 13rem;
+        .content1_heading {
+          font-size: 1.48rem;
+        }
+        .content1_subhading {
+          font-size: 1.118rem;
+        }
+        .content1_paragraph {
+          font-size: $body-text;
+        }
+      }
+      .content2 {
+        border-radius: 0 0 0 0.5rem;
+      }
+      .content3 {
+        border-radius: 0 0 0.5rem 0;
+      }
+    }
+  }
+}

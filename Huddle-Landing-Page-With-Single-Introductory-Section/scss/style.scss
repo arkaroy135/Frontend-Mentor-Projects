@@ -1,0 +1,131 @@
+@use "./color" as *;
+@use "./layout" as *;
+@use "./typography" as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: url(../images/bg-mobile.svg) no-repeat;
+  background-color: $Violet;
+  padding: 2rem;
+
+  .brand {
+    padding-bottom: 3rem;
+    .brand_logo {
+      width: 8rem;
+    }
+  }
+
+  main {
+    .hero {
+      .hero_image {
+        width: 100%;
+      }
+    }
+    .details {
+      text-align: center;
+      padding: 3.5rem 0;
+      color: $White;
+      .details_heading {
+        font: 600 1.5rem $font-Poppins;
+        line-height: 2rem;
+      }
+      .details_paragraph {
+        font: 400 1.02rem $font-OpenSans;
+        line-height: 1.5rem;
+        padding: 1.5rem 0;
+      }
+      .details_button {
+        border: 0;
+        color: $Violet;
+        background: $White;
+        font: 400 0.8rem $font-Poppins;
+        padding: 0.7rem 5rem;
+        border-radius: 2rem;
+        box-shadow: 0 0.3rem 0.5rem $Shadow;
+        cursor: pointer;
+        transition: all ease-in-out 0.2s;
+        &:hover {
+          background: $Soft-Magenta;
+          color: $White;
+        }
+      }
+    }
+  }
+
+  .social {
+    text-align: center;
+    svg {
+      width: 2.1rem;
+      height: 2.1rem;
+      fill: $White;
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+      border: 1px solid $White;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all ease-in-out 0.2s;
+      &:hover {
+        fill: $Soft-Magenta;
+        border-color: $Soft-Magenta;
+      }
+    }
+  }
+}
+
+@media (min-width: $Laptop-view) {
+  body {
+    padding: 3rem;
+    background: url(../images/bg-desktop.svg) no-repeat;
+    background-color: $Violet;
+    background-size: contain;
+
+    .brand {
+      padding-bottom: 4rem;
+      .brand_logo {
+        width: 12rem;
+      }
+    }
+
+    main {
+      display: flex;
+      .hero {
+        width: 50%;
+        .hero_image {
+          width: 40rem;
+        }
+      }
+      .details {
+        width: 50%;
+        text-align: left;
+        padding: 2.3rem 4rem;
+        .details_heading {
+          font-size: 2.2rem;
+          line-height: 3.3rem;
+          padding-right: 2rem;
+        }
+        .details_paragraph {
+          font-size: 1.1rem;
+          line-height: 1.9rem;
+        }
+        .details_button {
+          padding: 0.8rem 4rem;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .social {
+      text-align: right;
+    }
+  }
+}

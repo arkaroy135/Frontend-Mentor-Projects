@@ -13,6 +13,9 @@
 </template>
 <script setup>
 useHead({
+  htmlAttrs: {
+    lang: "en",
+  },
   title: "Advice Generator App",
   link: [{ rel: "shortcut icon", type: "image/png", href: "favicon.png" }],
 });

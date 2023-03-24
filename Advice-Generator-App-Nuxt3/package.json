@@ -8,6 +8,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxtjs/html-validator": "^1.2.4",
     "@unocss/nuxt": "^0.50.4",
     "@vueuse/core": "^9.13.0",
     "@vueuse/nuxt": "^9.13.0",
@@ -16,4 +17,3 @@
     "sass": "^1.59.3"
   }
 }
-

@@ -20,6 +20,7 @@
     </picture>
     <button
       @click="generator"
+      type="submit"
       aria-label="false"
       class="bg-hex-143571 theme-transition dark:bg-neonGreen w16 h16 rounded-full absolute bottom-0 left-1/2 translate-y-1/2 -translate-x-1/2 glow">
       <span v-if="isDark" class="c-black">

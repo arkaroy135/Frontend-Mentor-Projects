@@ -2,7 +2,8 @@
   font-family: HankenGrotesk;
   font-weight: 100 900;
   font-display: swap;
-  src: url("/assets/fonts/HankenGrotesk-VariableFont_wght.woff2") format("woff2");
+  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.woff2")
+    format("woff2");
 }
 *,
 *::before,
@@ -64,7 +65,11 @@ body .card .card-left .card-left-result {
   margin: auto;
   font-weight: 500;
   font-size: 1rem;
-  background: linear-gradient(to top, hsla(241, 72%, 46%, 0), hsl(256, 72%, 46%));
+  background: linear-gradient(
+    to top,
+    hsla(241, 72%, 46%, 0),
+    hsl(256, 72%, 46%)
+  );
   color: hsl(241, 100%, 89%);
   border-radius: 5em;
   display: flex;
@@ -112,19 +117,49 @@ body .card .card-right .card-right-result .subject-result .subject {
   display: flex;
   gap: 0.5em;
 }
-body .card .card-right .card-right-result .subject-result .subject .subject-reaction {
+body
+  .card
+  .card-right
+  .card-right-result
+  .subject-result
+  .subject
+  .subject-reaction {
   color: hsl(0, 100%, 67%);
 }
-body .card .card-right .card-right-result .subject-result .subject .subject-memory {
+body
+  .card
+  .card-right
+  .card-right-result
+  .subject-result
+  .subject
+  .subject-memory {
   color: hsl(39, 100%, 56%);
 }
-body .card .card-right .card-right-result .subject-result .subject .subject-verbal {
+body
+  .card
+  .card-right
+  .card-right-result
+  .subject-result
+  .subject
+  .subject-verbal {
   color: hsl(166, 100%, 37%);
 }
-body .card .card-right .card-right-result .subject-result .subject .subject-visual {
+body
+  .card
+  .card-right
+  .card-right-result
+  .subject-result
+  .subject
+  .subject-visual {
   color: hsl(234, 85%, 45%);
 }
-body .card .card-right .card-right-result .subject-result .marks-container .marks {
+body
+  .card
+  .card-right
+  .card-right-result
+  .subject-result
+  .marks-container
+  .marks {
   font-weight: 800;
 }
 body .card .card-right .card-right-result .reaction {

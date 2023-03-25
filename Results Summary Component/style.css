@@ -1,0 +1,168 @@
+@font-face {
+  font-family: HankenGrotesk;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/assets/fonts/HankenGrotesk-VariableFont_wght.woff2") format("woff2");
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: HankenGrotesk;
+  font-size: 1.125rem;
+}
+body .card {
+  max-width: 630px;
+  background-color: white;
+  box-shadow: 0.75rem 0.75rem 0.75rem hsl(241, 100%, 89%);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  body .card {
+    flex-direction: row;
+    border-radius: 0 1.5rem 1.5rem 0;
+    overflow: hidden;
+  }
+}
+body .card .card-left {
+  padding: 1.4em 3.5em;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+  color: hsl(221, 100%, 96%);
+  border-radius: 0 0 1.5rem 1.5rem;
+  gap: 1em;
+}
+@media (min-width: 768px) {
+  body .card .card-left {
+    width: 50%;
+    border-radius: 1.5rem;
+    padding: 1.8em 1.7em 2.5em 1.7em;
+  }
+}
+body .card .card-left .left-section-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+body .card .card-left .card-left-result {
+  width: 10rem;
+  aspect-ratio: 1;
+  margin: auto;
+  font-weight: 500;
+  font-size: 1rem;
+  background: linear-gradient(to top, hsla(241, 72%, 46%, 0), hsl(256, 72%, 46%));
+  color: hsl(241, 100%, 89%);
+  border-radius: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .card .card-left .card-left-result .result {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: white;
+}
+body .card .card-left .left-section-remarks .remarks-heading {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 0.3em;
+  color: white;
+}
+body .card .card-left .left-section-remarks .remarks {
+  font-weight: 500;
+}
+body .card .card-right {
+  padding: 1.5em;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  body .card .card-right {
+    width: 50%;
+  }
+}
+body .card .card-right .right-section-heading {
+  color: hsl(224, 30%, 27%);
+  font-weight: 800;
+}
+body .card .card-right .card-right-result .subject-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.1em auto;
+  padding: 0.6em;
+  border-radius: 0.6em;
+  font-weight: 500;
+}
+body .card .card-right .card-right-result .subject-result .subject {
+  display: flex;
+  gap: 0.5em;
+}
+body .card .card-right .card-right-result .subject-result .subject .subject-reaction {
+  color: hsl(0, 100%, 67%);
+}
+body .card .card-right .card-right-result .subject-result .subject .subject-memory {
+  color: hsl(39, 100%, 56%);
+}
+body .card .card-right .card-right-result .subject-result .subject .subject-verbal {
+  color: hsl(166, 100%, 37%);
+}
+body .card .card-right .card-right-result .subject-result .subject .subject-visual {
+  color: hsl(234, 85%, 45%);
+}
+body .card .card-right .card-right-result .subject-result .marks-container .marks {
+  font-weight: 800;
+}
+body .card .card-right .card-right-result .reaction {
+  background-color: hsla(0, 100%, 67%, 0.2);
+}
+body .card .card-right .card-right-result .memory {
+  background-color: hsla(39, 100%, 56%, 0.2);
+}
+body .card .card-right .card-right-result .verbal {
+  background-color: hsla(166, 100%, 37%, 0.2);
+}
+body .card .card-right .card-right-result .visual {
+  background-color: hsla(234, 85%, 45%, 0.2);
+}
+body .card .card-right .button {
+  width: 100%;
+  margin: 1em auto;
+  padding: 0.8em;
+  border: 0;
+  outline: 0;
+  font-size: 1.125rem;
+  border-radius: 2rem;
+  background: hsl(224, 30%, 27%);
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+body .card .card-right .button:hover {
+  background: hsl(241, 81%, 54%);
+}
+body .footer {
+  position: absolute;
+  bottom: 0;
+  bottom: 0.25rem;
+  width: 100%;
+  text-align: center;
+  font: 600 0.6875rem HankenGrotesk;
+}
+body .footer a {
+  color: hsl(228, 45%, 44%);
+}

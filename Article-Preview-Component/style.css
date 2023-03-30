@@ -10,7 +10,7 @@
 
 body {
   min-height: 100vh;
-  background: hsl(210deg, 46%, 95%);
+  background: hsl(210, 46%, 95%);
 }
 
 .container {
@@ -21,7 +21,7 @@ body {
 }
 .container .card {
   width: 20rem;
-  max-width: 45rem;
+  max-width: 85rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,12 +41,12 @@ body {
 .container .card .article-description h1 {
   font: 700 1rem "Manrope", sans-serif;
   line-height: 1.5rem;
-  color: hsl(217deg, 19%, 35%);
+  color: hsl(217, 19%, 35%);
 }
 .container .card .article-description p {
   font: 500 0.8125rem "Manrope", sans-serif;
   line-height: 1.3rem;
-  color: hsl(214deg, 17%, 51%);
+  color: hsl(214, 17%, 51%);
   padding: 1rem 0;
 }
 .container .card .article-description .profile {
@@ -68,55 +68,56 @@ body {
 }
 .container .card .article-description .profile .profile-details h2 {
   font: 700 0.9rem "Manrope", sans-serif;
-  color: hsl(217deg, 19%, 35%);
+  color: hsl(217, 19%, 35%);
 }
 .container .card .article-description .profile .profile-details small {
   font: 500 0.8125rem "Manrope", sans-serif;
-  color: hsl(214deg, 17%, 51%);
+  color: hsl(214, 17%, 51%);
 }
 .container .card .article-description .profile .share-button {
   margin-top: 0.2rem;
   width: 2.3rem;
   height: 2.3rem;
   border: 0;
-  background: hsl(210deg, 46%, 95%);
+  background: hsl(210, 46%, 95%);
   border-radius: 50%;
   cursor: pointer;
   color: transparent;
+  transition: all 0.4s linear;
   z-index: 1000;
 }
 .container .card .article-description .profile .share-button svg {
-  fill: hsl(214deg, 17%, 51%);
+  fill: hsl(214, 17%, 51%);
   scale: 1.1;
 }
 .container .card .article-description .profile .active {
-  background: hsl(214deg, 17%, 51%);
-  transition: all ease-in-out 0.4s;
+  background: hsl(214, 17%, 51%);
+  transition: all 0.4s linear;
 }
 .container .card .article-description .profile .active svg {
-  fill: hsl(210deg, 46%, 95%);
+  fill: hsl(210, 46%, 95%);
 }
 .container .card .article-description .profile .share-components {
   display: flex;
   align-items: center;
   position: absolute;
   inset: 0;
-  background: hsl(217deg, 19%, 35%);
+  background: hsl(217, 19%, 35%);
   margin: -1rem -2rem -1.5rem -2rem;
   border-radius: 0 0 1rem 1rem;
   list-style: none;
   letter-spacing: 0.5rem;
   text-transform: uppercase;
-  color: hsl(212deg, 23%, 69%);
+  color: hsl(212, 23%, 69%);
   gap: 1rem;
   padding-left: 1.8rem;
   transform: translateY(0);
-  transition: transform ease-in-out 0.5s;
+  transition: transform 0.5s linear;
 }
 .container .card .article-description .profile .share-components span {
   font: 700 0.8125rem "Manrope", sans-serif;
   cursor: default;
-  color: hsl(210deg, 46%, 95%);
+  color: hsl(210, 46%, 95%);
 }
 .container .card .article-description .profile .share-components a img {
   cursor: pointer;
@@ -131,34 +132,36 @@ body {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228deg, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
 
 @media (min-width: 1024px) {
   .container .card {
     flex-direction: row;
-    width: 43rem;
+    width: 53rem;
     overflow: visible;
   }
   .container .card .article-image {
-    height: 17rem;
+    height: 20rem;
+    width: 50%;
     border-radius: 1rem 0 0 1rem;
   }
   .container .card .article-description {
+    width: 50%;
     margin-top: 0;
   }
   .container .card .article-description h1 {
     font: 700 1.3rem "Manrope", sans-serif;
   }
   .container .card .article-description .profile {
-    margin-top: 0;
+    margin-top: 1rem;
   }
   .container .card .article-description .profile .profile-details {
     justify-content: space-between;
-    margin-left: -8rem;
+    margin-left: -7.2rem;
   }
   .container .card .article-description .profile .active {
-    transition: all ease-in-out 0.2s;
+    transition: all 0.2s linear;
   }
   .container .card .article-description .profile .share-components {
     width: 70%;
@@ -166,7 +169,7 @@ body {
     border-radius: 0.5rem;
     padding: 1.8rem 0;
     justify-content: center;
-    inset: -3.7rem 16.05rem;
+    inset: -3.6rem 15.5rem;
     letter-spacing: 0.2rem;
     scale: 1;
     transition: scale 0.4s;
@@ -179,7 +182,7 @@ body {
     height: 0;
     border-left: 1rem solid transparent;
     border-right: 1rem solid transparent;
-    border-top: 1rem solid hsl(217deg, 19%, 35%);
+    border-top: 1rem solid hsl(217, 19%, 35%);
     inset: 3.4rem 6.8rem;
   }
   .container .card .article-description .profile .hidden {

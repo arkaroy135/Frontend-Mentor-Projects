@@ -23,7 +23,7 @@ body {
   justify-content: center;
   .card {
     width: 20rem;
-    max-width: 45rem;
+    max-width: 85rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,6 +82,7 @@ body {
           border-radius: 50%;
           cursor: pointer;
           color: transparent;
+          transition: all 0.4s linear;
           z-index: 1000;
           svg {
             fill: $Desaturated-Dark-Blue;
@@ -90,7 +91,7 @@ body {
         }
         .active {
           background: $Desaturated-Dark-Blue;
-          transition: all ease-in-out 0.4s;
+          transition: all 0.4s linear;
           svg {
             fill: $Light-Grayish-Blue;
           }
@@ -110,7 +111,7 @@ body {
           gap: 1rem;
           padding-left: 1.8rem;
           transform: translateY(0);
-          transition: transform ease-in-out 0.5s;
+          transition: transform 0.5s linear;
           span {
             font: 700 $body-text $font-Manrope;
             cursor: default;
@@ -143,25 +144,27 @@ body {
   .container {
     .card {
       flex-direction: row;
-      width: 43rem;
+      width: 53rem;
       overflow: visible;
       .article-image {
-        height: 17rem;
+        height: 20rem;
+        width: 50%;
         border-radius: 1rem 0 0 1rem;
       }
       .article-description {
+        width: 50%;
         margin-top: 0;
         h1 {
           font: 700 1.3rem $font-Manrope;
         }
         .profile {
-          margin-top: 0;
+          margin-top: 1rem;
           .profile-details {
             justify-content: space-between;
-            margin-left: -8rem;
+            margin-left: -7.2rem;
           }
           .active {
-            transition: all ease-in-out 0.2s;
+            transition: all 0.2s linear;
           }
           .share-components {
             width: 70%;
@@ -169,7 +172,7 @@ body {
             border-radius: 0.5rem;
             padding: 1.8rem 0;
             justify-content: center;
-            inset: -3.7rem 16.05rem;
+            inset: -3.6rem 15.5rem;
             letter-spacing: 0.2rem;
             scale: 1;
             transition: scale 0.4s;

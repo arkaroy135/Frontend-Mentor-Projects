@@ -27,7 +27,7 @@
   </div>
   <div>
     <div
-      class="flex flex-col-reverse md:flex-row justify-center mxa items-center px10 md:px20 py25 <md:gap15">
+      class="flex flex-col-reverse md:flex-row-reverse justify-center mxa items-center px10 md:px20 py25 <md:gap15">
       <div
         class="md:w50% spacey3 text-VeryDarkCyan font-OpenSans <md:text-center">
         <h2 class="text-6 md:text-8 font-Poppins">Flowing Conversations</h2>
@@ -37,7 +37,7 @@
           online? Our threads have just-in-time loading for a more natural flow.
         </p>
       </div>
-      <div class="wmax">
+      <div class="wmax mxa">
         <IconsFlowingConversation class="wfull" />
       </div>
     </div>
@@ -69,4 +69,3 @@
     </div>
   </div>
 </template>
-

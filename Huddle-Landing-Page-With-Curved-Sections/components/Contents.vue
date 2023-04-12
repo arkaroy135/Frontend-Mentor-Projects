@@ -5,7 +5,7 @@
       <IconsSectionTopMobile1 class="md:hidden" />
     </div>
     <div
-      class="flex flex-col-reverse md:flex-row bg-VeryPaleBlue justify-center mxa items-center px10 md:px20 spacey15 md:spacey10 <md:gap15">
+      class="flex flex-col-reverse md:flex-row bg-VeryPaleBlue justify-center mxa items-center px10 md:px20 py15 <md:gap15">
       <div
         class="md:w50% spacey3 text-VeryDarkCyan font-OpenSans <md:text-center">
         <h2 class="text-7 md:text-8 font-Poppins">Grow Together</h2>
@@ -27,7 +27,7 @@
   </div>
   <div>
     <div
-      class="flex flex-col-reverse md:flex-row-reverse justify-center mxa items-center px10 md:px20 py25 <md:gap15">
+      class="flex flex-col-reverse md:flex-row-reverse justify-center mxa items-center px10 md:px20 py15 <md:gap15">
       <div
         class="md:w50% spacey3 text-VeryDarkCyan font-OpenSans <md:text-center">
         <h2 class="text-6 md:text-8 font-Poppins">Flowing Conversations</h2>
@@ -48,7 +48,7 @@
       <IconsSectionTopMobile2 class="md:hidden" />
     </div>
     <div
-      class="flex flex-col-reverse md:flex-row bg-VeryPaleBlue justify-center mxa items-center px10 md:px20 spacey15 md:spacey10 <md:gap15">
+      class="flex flex-col-reverse md:flex-row bg-VeryPaleBlue justify-center mxa items-center px10 md:px20 <md:gap15 py15">
       <div
         class="md:w50% spacey3 text-VeryDarkCyan font-OpenSans <md:text-center">
         <h2 class="text-7 md:text-8 font-Poppins">Your Users</h2>

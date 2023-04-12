@@ -31,17 +31,3 @@ useHead({
   ],
 });
 </script>
-<style lang="scss">
-// ### Primary
-
-$Pink: hsl(322, 100%, 66%);
-$LightPink: hsl(321, 100%, 78%);
-$LightRed: hsl(0, 100%, 63%);
-
-// ### Neutral
-
-$VeryDarkCyan: hsl(192, 100%, 9%);
-$VeryPaleBlue: hsl(210, 100%, 98%);
-$FooterLink: hsl(228, 45%, 44%);
-</style>
-

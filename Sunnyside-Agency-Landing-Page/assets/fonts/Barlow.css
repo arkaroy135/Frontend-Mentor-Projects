@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Barlow";
+  font-display: swap;
+  font-weight: 600;
+  src: url("~/assets/fonts/Barlow.woff2") format("woff2");
+}
+

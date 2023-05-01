@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "PoppinsBold";
+  font-display: swap;
+  font-weight: 700;
+  src: url("/fonts/Poppins-Bold.woff2") format("woff2"),
+    url("/fonts/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PoppinsItalic";
+  font-display: swap;
+  font-weight: 400;
+  src: url("/fonts/Poppins-Italic.woff2") format("woff2"),
+    url("/fonts/Poppins-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PoppinsXBold";
+  font-display: swap;
+  font-weight: 800;
+  src: url("/fonts/Poppins-ExtraBoldItalic.woff2") format("woff2"),
+    url("/fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
+}
+

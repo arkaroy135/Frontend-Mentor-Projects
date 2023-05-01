@@ -7,7 +7,7 @@
 
 body {
   font-family: "Outfit";
-  background: hsl(217deg, 54%, 11%);
+  background: hsl(217, 54%, 11%);
 }
 body .container {
   display: flex;
@@ -21,7 +21,7 @@ body .container .card {
   display: flex;
   flex-direction: column;
   width: 21rem;
-  background: hsl(216deg, 50%, 16%);
+  background: hsl(216, 50%, 16%);
   padding: 1.3rem;
   border-radius: 1rem;
 }
@@ -36,46 +36,44 @@ body .container .card .image-wrapper .item {
 }
 body .container .card .image-wrapper .overlay {
   position: absolute;
-  background: hsl(178deg, 100%, 50%);
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  background: hsl(178, 100%, 50%);
+  opacity: 0;
+  inset: 0;
   border-radius: 0.5rem;
-  display: none;
+  transition: opacity 0.3s linear;
 }
 body .container .card .image-wrapper .item-open {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
+  opacity: 0;
+  transition: opacity 0.3s linear;
 }
 body .container .card .image-wrapper:hover .overlay {
-  display: block;
+  opacity: 0.5;
 }
 body .container .card .image-wrapper:hover .item-open {
-  display: block;
+  opacity: 1;
 }
 body .container .card .description {
   padding: 0.5rem 0;
 }
-body .container .card .description h1 {
-  color: hsl(0deg, 0%, 100%);
+body .container .card .description h1 span {
+  color: hsl(0, 0%, 100%);
   font-size: 1.38rem;
   font-weight: 600;
   padding: 1rem 0;
   cursor: pointer;
-  transition: all ease-in-out 0.3s;
+  transition: all linear 0.2s;
 }
-body .container .card .description h1:hover {
-  color: hsl(178deg, 100%, 50%);
+body .container .card .description h1 span:hover {
+  color: hsl(178, 100%, 50%);
 }
 body .container .card .description p {
   font-size: 1.125rem;
   font-weight: 300;
-  color: hsl(215deg, 51%, 70%);
+  color: hsl(215, 51%, 70%);
   padding: 0.2rem 0;
   line-height: 1.6rem;
 }
@@ -91,7 +89,7 @@ body .container .card .status .price {
 }
 body .container .card .status .price p {
   font-weight: 600;
-  color: hsl(178deg, 100%, 50%);
+  color: hsl(178, 100%, 50%);
   padding-left: 0.5rem;
 }
 body .container .card .status .timer {
@@ -100,11 +98,11 @@ body .container .card .status .timer {
 }
 body .container .card .status .timer p {
   font-weight: 300;
-  color: hsl(215deg, 51%, 70%);
+  color: hsl(215, 51%, 70%);
   padding-left: 0.5rem;
 }
 body .container .card hr {
-  color: hsl(215deg, 32%, 27%);
+  color: hsl(215, 32%, 27%);
 }
 body .container .card .profile {
   display: flex;
@@ -114,30 +112,30 @@ body .container .card .profile {
 body .container .card .profile .avatar {
   width: 2rem;
   height: 2rem;
-  border: 1px solid hsl(0deg, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 100%);
   border-radius: 100%;
 }
 body .container .card .profile p {
   font-size: 1rem;
   padding: 0 1.2rem;
-  color: hsl(215deg, 51%, 70%);
+  color: hsl(215, 51%, 70%);
 }
 body .container .card .profile .creator {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   cursor: pointer;
-  transition: all ease-in-out 0.3s;
+  transition: all linear 0.3s;
 }
 body .container .card .profile .creator:hover {
-  color: hsl(178deg, 100%, 50%);
+  color: hsl(178, 100%, 50%);
 }
 body .attribution {
   font-size: 11px;
   text-align: center;
   height: 1rem;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
 body .attribution a {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   font-weight: 600;
 }
 
@@ -155,4 +153,4 @@ body .attribution a {
   body .container .card .profile p {
     font-size: 1.125rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}

@@ -49,27 +49,25 @@ body {
         .overlay {
           position: absolute;
           background: $cyan-text;
-          opacity: 0.5;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
+          opacity: 0;
+          inset: 0;
           border-radius: 0.5rem;
-          display: none;
+          transition: opacity 0.3s linear;
         }
         .item-open {
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          display: none;
+          opacity: 0;
+          transition: opacity 0.3s linear;
         }
         &:hover {
           .overlay {
-            display: block;
+            opacity: 0.5;
           }
           .item-open {
-            display: block;
+            opacity: 1;
           }
         }
       }
@@ -77,15 +75,18 @@ body {
       .description {
         padding: 0.5rem 0;
         h1 {
-          color: $white-text;
-          font-size: 1.38rem;
-          font-weight: 600;
-          padding: 1rem 0;
-          cursor: pointer;
-          transition: all ease-in-out 0.3s;
-        }
-        h1:hover {
-          color: $cyan-text;
+          span {
+            color: $white-text;
+            font-size: 1.38rem;
+            font-weight: 600;
+            padding: 1rem 0;
+            cursor: pointer;
+            transition: all linear 0.2s;
+
+            &:hover {
+              color: $cyan-text;
+            }
+          }
         }
 
         p {
@@ -145,7 +146,7 @@ body {
         .creator {
           color: $white-text;
           cursor: pointer;
-          transition: all ease-in-out 0.3s;
+          transition: all linear 0.3s;
         }
         .creator:hover {
           color: $cyan-text;

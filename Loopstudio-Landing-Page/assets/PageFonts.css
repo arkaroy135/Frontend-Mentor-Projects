@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Alata";
+  font-display: swap;
+  font-weight: 400;
+  src: url("assets/fonts/Alata.woff2") format("woff2"),
+    url("assets/fonts/Alata.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "JosefinSans";
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("assets/fonts/JosefinSans.woff2") format("woff2"),
+    url("assets/fonts/JosefinSans.ttf") format("truetype");
+}
+

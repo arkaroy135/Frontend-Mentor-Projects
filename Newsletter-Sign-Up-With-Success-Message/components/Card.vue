@@ -76,7 +76,7 @@
         <button
           type="submit"
           @click.prevent="validateEmail"
-          class="py3 mt3 rd-2 !bg-DarkSlateGrey c-White font-RB transition-all-250 @hover:bg-Tomato">
+          class="py3 mt3 rd-2 !bg-DarkSlateGrey c-White font-RB transition-all-250 @hover:!bg-Tomato">
           Subscribe to monthly newsletter
         </button>
       </div>
@@ -87,7 +87,7 @@
 
   <div
     v-show="isValid == true"
-    class="flex flex-col <md:(min-h100dvh min-w100dvw rd-0) w90dvw max-w23rem bg-White rd-4 overflow-hidden p6 md:p8 gap4">
+    class="flex flex-col <md:(min-h100dvh min-w100dvw rd-0) max-w23rem bg-White rd-4 overflow-hidden p6 md:p8 gap4">
     <div class="flex flex-col gap7 mya">
       <NuxtImg
         src="/icon-success.svg"
@@ -97,16 +97,16 @@
       <h2 class="text-10 md:text-11 c-DarkSlateGrey font-RB leading-10">
         Thanks for subscribing!
       </h2>
-      <p class="text-para font-RR leading-6 p0">
+      <p class="text-3.6 font-RR leading-6 p0">
         A confirmation email has been sent to <b>{{ email }}</b
         >. Please open it and click the button inside to confirm your
         subscription.
       </p>
     </div>
     <button
-      type="submit"
+      type="reset"
       @click.prevent="resetForm"
-      class="<md:mta py3 mt2 rd-2 !bg-DarkSlateGrey c-White font-RB transition-all-250 @hover:bg-Tomato">
+      class="<md:mta py3 mt2 rd-2 !bg-DarkSlateGrey c-White font-RB transition-all-250 @hover:!bg-Tomato">
       Dismiss message
     </button>
   </div>

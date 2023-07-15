@@ -42,7 +42,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      // siteUrl: "",
+      siteUrl: "https://arnewsletter.vercel.app",
       siteName: "Newsletter Sign-up Form",
       titleSeparator: "|",
       siteDescription:

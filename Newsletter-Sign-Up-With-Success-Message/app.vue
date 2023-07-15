@@ -1,4 +1,4 @@
-<script lang="ts">
+<script setup lang="ts">
   useHead({
     link: [{ rel: "shortcut icon", type: "image/x-icon", href: "favicon.ico" }],
   });

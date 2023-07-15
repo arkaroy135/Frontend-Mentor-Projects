@@ -76,7 +76,7 @@
         <button
           type="submit"
           @click.prevent="validateEmail"
-          class="py3 mt3 rd-2 bg-DarkSlateGrey c-White font-RB transition-all-250 @hover:bg-Tomato">
+          class="py3 mt3 rd-2 !bg-DarkSlateGrey c-White font-RB transition-all-250 @hover:bg-Tomato">
           Subscribe to monthly newsletter
         </button>
       </div>
@@ -106,7 +106,7 @@
     <button
       type="submit"
       @click.prevent="resetForm"
-      class="<md:mta py3 mt2 rd-2 bg-DarkSlateGrey c-White font-RB transition-all-250 @hover:bg-Tomato">
+      class="<md:mta py3 mt2 rd-2 !bg-DarkSlateGrey c-White font-RB transition-all-250 @hover:bg-Tomato">
       Dismiss message
     </button>
   </div>

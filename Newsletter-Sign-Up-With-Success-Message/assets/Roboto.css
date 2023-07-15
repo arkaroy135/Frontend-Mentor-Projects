@@ -2,15 +2,15 @@
   font-family: "Roboto-Regular";
   font-display: swap;
   font-weight: 400;
-  src: url("assets/fonts/Roboto-Regular.woff2") format("woff2"),
-    url("assets/fonts/Roboto-Regular.ttf") format("TrueType"),
-    url("assets/fonts/Roboto-Regular.otf") format("OpenType");
+  src: url("/fonts/Roboto-Regular.woff2") format("woff2"),
+    url("/fonts/Roboto-Regular.ttf") format("TrueType"),
+    url("/fonts/Roboto-Regular.otf") format("OpenType");
 }
 @font-face {
   font-family: "Roboto-Bold";
   font-display: swap;
   font-weight: 700;
-  src: url("assets/fonts/Roboto-Bold.woff2") format("woff2"),
-    url("assets/fonts/Roboto-Bold.ttf") format("TrueType"),
-    url("assets/fonts/Roboto-Bold.otf") format("OpenType");
+  src: url("/fonts/Roboto-Bold.woff2") format("woff2"),
+    url("/fonts/Roboto-Bold.ttf") format("TrueType"),
+    url("/fonts/Roboto-Bold.otf") format("OpenType");
 }

@@ -12,9 +12,6 @@ export default defineNuxtConfig({
   ],
   extends: ["nuxt-seo-kit"],
   css: ["assets/Roboto.css"],
-  image: {
-    dir: "assets/images"
-  },
   unocss: {
     preflight: true,
   },

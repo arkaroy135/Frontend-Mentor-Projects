@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Inter-Regular";
+  font-display: swap;
+  font-weight: 400;
+  src: url("/fonts/Inter-Regular.woff2") format("woff2"),
+    url("/fonts/Inter-Regular.ttf") format("TrueType"),
+    url("/fonts/Inter-Regular.otf") format("OpenType");
+}
+@font-face {
+  font-family: "Inter-Bold";
+  font-display: swap;
+  font-weight: 700;
+  src: url("/fonts/Inter-Bold.woff2") format("woff2"),
+    url("/fonts/Inter-Bold.ttf") format("TrueType"),
+    url("/fonts/Inter-Bold.otf") format("OpenType");
+}

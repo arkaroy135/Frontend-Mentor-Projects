@@ -13,8 +13,13 @@
 body {
   min-width: 100dvw;
   min-height: 100dvh;
-  background: url("../assets/images/bg-mobile.png") no-repeat;
-  background-size: cover;
+  background: url("../assets/images/bg-mobile.png") no-repeat center / cover;
+  overflow: hidden;
+
+  @media (min-width: $laptop-view) {
+    background: $VeryDarkBlue url("../assets/images/bg-desktop.png") no-repeat
+      bottom / contain;
+  }
 
   main {
     height: calc(100dvh - 1.5rem);

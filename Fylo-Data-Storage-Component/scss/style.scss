@@ -1,0 +1,144 @@
+@use "./colors" as *;
+@use "./fonts" as *;
+@use "./layout" as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 100dvw;
+  min-height: 100dvh;
+  background: url("../assets/images/bg-mobile.png") no-repeat;
+  background-size: cover;
+
+  main {
+    width: 100%;
+    height: calc(100dvh - 1.5rem);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .about {
+      background: $DarkBlue;
+      width: 20rem;
+      padding: 2em;
+      border-radius: 1em 5em 1em 1em;
+
+      .button {
+        display: flex;
+
+        div {
+          background-color: $VeryDarkBlue;
+          border-radius: 0.5em;
+          width: 3rem;
+          aspect-ratio: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 1.5em 0.5em;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .details {
+      position: relative;
+      background: $DarkBlue;
+      width: 20rem;
+      padding: 1.5em;
+      margin: 1.5em 0;
+      border-radius: 1em;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+
+      .message {
+        color: $PaleBlue;
+        font-family: $RR;
+        font-size: $para;
+
+        strong {
+          color: $PaleBlue;
+          font-family: $RB;
+          font-size: 1rem;
+        }
+      }
+
+      .usage-bar {
+        width: 100%;
+        background: $VeryDarkBlue;
+        height: 1.4em;
+        content: "";
+        border-radius: 1em;
+        padding: 0.16em;
+
+        .grad-bar {
+          content: "";
+          width: 81.5%;
+          height: 100%;
+          background: linear-gradient(90deg, $Gradient-Left, $Gradient-Right);
+          border-radius: 1em;
+          padding: 0.12em 0.18em;
+
+          .dot {
+            content: "";
+            width: 0.85rem;
+            height: 0.85rem;
+            background: $PaleBlue;
+            float: right;
+            border-radius: 100%;
+          }
+        }
+      }
+
+      .capacity {
+        display: flex;
+        justify-content: space-between;
+        color: $PaleBlue;
+        font-family: $RB;
+      }
+
+      .popup {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        bottom: -50%;
+        left: 50%;
+        transform: translate(-60%, -60%);
+        background: $PaleBlue;
+        padding: 1em;
+        border-radius: 0.6em;
+        color: $GrayishBlue;
+        font-family: $RB;
+        font-size: $footer;
+        text-transform: uppercase;
+
+        .storage-left {
+          font-size: 2rem;
+          color: $VeryDarkBlue;
+          margin: 0 0.25em;
+        }
+      }
+    }
+  }
+
+  .footer {
+    font-size: $footer;
+    text-align: center;
+    font-family: $RB;
+    height: 1.5rem;
+    color: #fff;
+
+    a {
+      color: $FooterLink;
+      text-decoration: none;
+    }
+  }
+}

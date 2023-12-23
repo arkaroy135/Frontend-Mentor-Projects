@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "WorkSans";
+  font-display: swap;
+  font-weight: 100 900;
+  src:
+    url("/fonts/WorkSans-VariableFont.woff2") format("woff2"),
+    url("/fonts/WorkSans-VariableFont.ttf") format("TrueType"),
+    url("/fonts/WorkSans-VariableFont.otf") format("OpenType");
+}
